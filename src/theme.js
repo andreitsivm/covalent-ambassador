@@ -64,7 +64,12 @@ const theme = extendTheme({
   components: {
     Link: {
       baseStyle: {
+        color: "secondary.0",
+        fontSize: "button",
         textDecoration: "none",
+        _hover: {
+          textDecoration: "underline",
+        },
         _focus: {
           boxShadow: "none",
           outline: "none",
@@ -75,6 +80,7 @@ const theme = extendTheme({
       },
       variants: {
         footerLink: {
+          fontSize: "body",
           display: "block",
           mb: 2,
           color: "basic.0",
@@ -83,6 +89,7 @@ const theme = extendTheme({
           },
         },
         headerLink: {
+          fontSize: "body",
           color: "basic.0",
           _hover: { color: "secondary.0", textDecoration: "none" },
           _activeLink: {
@@ -91,6 +98,7 @@ const theme = extendTheme({
           },
         },
         mobileLink: {
+          fontSize: "body",
           color: "basic.5",
           display: "block",
           _hover: { color: "secondary.0", textDecoration: "none" },
@@ -154,14 +162,15 @@ const theme = extendTheme({
         fontWeight: "bold",
         fontSize: "button",
         lineHeight: "button",
-        fontFamily: "main",
-
-        outline: 0,
+        fontFamily: "body",
         px: "24px",
         py: "14px",
         color: "basic.0",
         bg: "secondary.0",
         transition: "background-color 0.3s ease",
+        _focus: {
+          outline: "none",
+        },
         _hover: {
           bg: "primary",
           textDecoration: "none",

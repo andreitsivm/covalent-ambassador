@@ -63,8 +63,8 @@ const Footer = () => {
             width: "100%",
           }}
         />
-        <Row>
-          <Column d="flex" alignItems="center">
+        <Row alignItems="center">
+          <Column d="flex" alignItems="center" mb={{ base: "24px", md: "0" }}>
             <Image width="60px" height="60px" src={logo} mr={2} />
             <Heading as="div" variant="h3" color="basic.0">
               Covalent

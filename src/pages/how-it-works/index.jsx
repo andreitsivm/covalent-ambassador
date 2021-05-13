@@ -37,8 +37,16 @@ const HowItWorks = (props) => {
       </Box>
       <Box py={10} bgGradient="linear-gradient(to-l, secondary.1, basic.5)">
         <Container>
-          <Flex justify="space-between">
-            <Heading color="basic.0">
+          <Flex
+            justify="space-between"
+            alignItems="center"
+            flexDirection={{ base: "column", md: "row" }}
+          >
+            <Heading
+              color="basic.0"
+              textAlign={{ base: "center", md: "left" }}
+              mb={{ base: "24px", md: "0" }}
+            >
               Наші інструменти прості та доступні
             </Heading>{" "}
             <Link
