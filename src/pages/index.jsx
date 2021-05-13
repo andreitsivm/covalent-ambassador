@@ -17,7 +17,7 @@ const Index = (props) => {
           backgroudRepeat: "no-repeat",
         }}
       >
-        <Container py="256px">
+        <Container py={{ base: 5, md: "256px" }}>
           <Box maxW={{ base: "100%", md: "60%" }}>
             <Heading color="basic.0" variant="h1" as="h1" textAlign="center">
               Один уніфікований API. Один мільярд можливостей.
@@ -30,7 +30,7 @@ const Index = (props) => {
         </Container>
       </Box>
 
-      <Box py={5}>
+      <Box py={5} textAlign={{ base: "center", md: "left" }}>
         <Container>
           <Row>
             <Column d="flex" flexDirection="column" justifyContent="center">
@@ -52,7 +52,7 @@ const Index = (props) => {
           </Row>
         </Container>
       </Box>
-      <Box py={5}>
+      <Box py={5} textAlign={{ base: "center", md: "left" }}>
         <Container>
           <FluidItem>
             <Heading variant="h1">What makes Covalent unique?</Heading>

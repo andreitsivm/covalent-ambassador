@@ -11,6 +11,7 @@ const HowItWorks = (props) => {
   return (
     <Page {...pageMeta} {...props}>
       <Box
+        textAlign={{ base: "center", md: "left" }}
         bgImage={`url(${bg})`}
         py="150px"
         bgPosition="center"

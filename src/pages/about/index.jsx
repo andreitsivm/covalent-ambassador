@@ -14,6 +14,7 @@ const About = (props) => {
   return (
     <Page {...pageMeta} {...props}>
       <Box
+        textAlign={{ base: "center", md: "left" }}
         bgImage={`url(${bg})`}
         py="150px"
         bgPosition="center"
@@ -31,7 +32,7 @@ const About = (props) => {
         </Container>
       </Box>
       <Box py={6}>
-        <Container>
+        <Container textAlign={{ base: "center", md: "left" }}>
           <Heading variant="h1">Ми єдині назад у космос</Heading>
           <Text>
             Ми розподілена команда з 30 осіб, яка працює понад 100 років
@@ -39,21 +40,25 @@ const About = (props) => {
           </Text>
           <Row>
             <Column mb={{ base: "30px", md: "0" }}>
-              <Flex>
+              <Flex
+                alignItems="center"
+                flexDirection={{ base: "column", md: "row" }}
+              >
                 <Box
-                  sx={{
-                    borderRadius: "small",
-                    mr: "16px",
-                  }}
+                  mb={{ base: "16px", md: "0" }}
+                  mr={{ base: "0", md: "16px" }}
                 >
                   <Image
+                    sx={{
+                      borderRadius: "small",
+                    }}
                     maxW="200px"
                     h="200px"
                     src={ganesh}
                     alt="Ganesh Swami"
                   />
                 </Box>
-                <Box h="100%">
+                <Box>
                   <Heading as="h3" variant="h3">
                     Ганеш Свамі
                   </Heading>
@@ -64,16 +69,25 @@ const About = (props) => {
               </Flex>
             </Column>
             <Column>
-              <Flex>
+              <Flex
+                alignItems="center"
+                flexDirection={{ base: "column", md: "row" }}
+              >
                 <Box
-                  sx={{
-                    borderRadius: "small",
-                    mr: "16px",
-                  }}
+                  mb={{ base: "16px", md: "0" }}
+                  mr={{ base: "0", md: "16px" }}
                 >
-                  <Image maxW="200px" h="200px" src={levi} alt="Levi Aul" />
+                  <Image
+                    sx={{
+                      borderRadius: "small",
+                    }}
+                    maxW="200px"
+                    h="200px"
+                    src={levi}
+                    alt="Levi Aul"
+                  />
                 </Box>
-                <Box h="100%">
+                <Box>
                   <Heading as="h3" variant="h3">
                     Леві Оул
                   </Heading>
@@ -84,21 +98,25 @@ const About = (props) => {
               </Flex>
             </Column>
             <Column>
-              <Flex>
+              <Flex
+                alignItems="center"
+                flexDirection={{ base: "column", md: "row" }}
+              >
                 <Box
-                  sx={{
-                    borderRadius: "small",
-                    mr: "16px",
-                  }}
+                  mb={{ base: "16px", md: "0" }}
+                  mr={{ base: "0", md: "16px" }}
                 >
                   <Image
+                    sx={{
+                      borderRadius: "small",
+                    }}
                     maxW="200px"
                     h="200px"
                     src={adrian}
                     alt="Adrian Jonklaas"
                   />
                 </Box>
-                <Box h="100%">
+                <Box>
                   <Heading as="h3" variant="h3">
                     Адріан Джонклас
                   </Heading>

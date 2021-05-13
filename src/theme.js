@@ -12,7 +12,7 @@ const theme = extendTheme({
   },
   fontSizes: {
     h1: "56px",
-    h1m: "40px",
+    h1m: "44px",
     h2: "40px",
     h2m: "32px",
     h3: "24px",
@@ -40,7 +40,7 @@ const theme = extendTheme({
     subtitle: "28px",
     subtitlem: "24px",
     h1: "60px",
-    h1m: "40px",
+    h1m: "60px",
     h2: "48px",
     h2m: "32px",
     h3: "32px",
@@ -135,9 +135,8 @@ const theme = extendTheme({
       variants: {
         h1: {
           color: "basic.5",
-          fontSize: "h1",
+          fontSize: ["h1m", null, null, "h1"],
           lineHeight: ["h1m", null, null, "h1"],
-
           mt: 0,
           mb: 4,
         },
@@ -145,7 +144,6 @@ const theme = extendTheme({
           color: "basic.5",
           fontSize: ["h2m", null, null, "h2"],
           lineHeight: ["h2m", null, null, "h2"],
-
           mt: 0,
           mb: 3,
         },

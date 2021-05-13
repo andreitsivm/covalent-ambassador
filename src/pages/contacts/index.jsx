@@ -14,6 +14,7 @@ const Contacts = (props) => {
   return (
     <Page {...pageMeta} {...props}>
       <Box
+        textAlign={{ base: "center", md: "left" }}
         bgImage={`url(${bg})`}
         py="150px"
         bgPosition="center"
@@ -32,7 +33,7 @@ const Contacts = (props) => {
           </Box>
         </Container>
       </Box>
-      <Container py={10}>
+      <Container py={10} textAlign={{ base: "center", md: "left" }}>
         <Row>
           <Column>
             <Heading variant="subtitle ">Email</Heading>{" "}
