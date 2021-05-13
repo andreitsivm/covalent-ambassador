@@ -5,7 +5,7 @@ import Link from "Components/link";
 import Container from "Components/container";
 import Desktop from "./desktop";
 import Mobile from "./mobile";
-import logo from "Img/logo-v.svg";
+import logo from "Img/logo--white.svg";
 
 const Header = () => {
   return (
@@ -30,23 +30,8 @@ const Header = () => {
           alignItems="center"
           p={3}
         >
-          <Link
-            href="/"
-            display="flex"
-            alignItems="center"
-            sx={{
-              "&:focus": {
-                boxShadow: "none",
-              },
-              "&:hover": {
-                textDecoration: "none",
-              },
-            }}
-          >
-            <Image width="60px" height="60px" src={logo} mr={2} />
-            <Heading as="div" variant="h3" color="basic.0">
-              Covalent
-            </Heading>
+          <Link href="/">
+            <Image width="160px" h="60px" src={logo} />
           </Link>
           <Desktop />
           <Mobile />

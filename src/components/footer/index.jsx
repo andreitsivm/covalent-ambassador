@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Image, Heading, Text } from "@chakra-ui/react";
+import { Box, Image, Heading } from "@chakra-ui/react";
 import {
   FaDiscord,
   FaTelegramPlane,
@@ -9,7 +9,7 @@ import {
 import Link from "Components/link";
 import Row, { Column } from "Components/row";
 import Container from "Components/container";
-import logo from "Img/logo--white.svg";
+import logo from "Img/logo-v.svg";
 
 const Footer = () => {
   return (
@@ -64,8 +64,11 @@ const Footer = () => {
           }}
         />
         <Row>
-          <Column>
-            <Image width="160px" h="60px" src={logo} />
+          <Column d="flex" alignItems="center">
+            <Image width="60px" height="60px" src={logo} mr={2} />
+            <Heading as="div" variant="h3" color="basic.0">
+              Covalent
+            </Heading>
           </Column>
           <Box d="flex">
             <Link mr={3} isExternal href="https://t.me/CovalentHQ">

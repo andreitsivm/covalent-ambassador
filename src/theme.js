@@ -1,16 +1,6 @@
 // import { theme as defaultTheme } from "@chakra-ui/theme";
 import { extendTheme } from "@chakra-ui/react";
 
-const fontSizes = [
-  "14px", //0
-  "16px", //1
-  "18px", //2
-  "24px", //3
-  "32px", //4
-  "40px", //5
-  "48px", //6
-];
-
 const theme = extendTheme({
   breakpoints: {
     base: 0,
@@ -182,5 +172,4 @@ const theme = extendTheme({
     },
   },
 });
-console.log(theme);
 export default theme;
