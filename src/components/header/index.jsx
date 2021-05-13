@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { Flex, Box, Image } from "@chakra-ui/react";
-import Link from "Components/link";
+import { navigate } from "gatsby";
 
 import Container from "Components/container";
 import Desktop from "./desktop";
@@ -30,9 +30,16 @@ const Header = () => {
           alignItems="center"
           p={3}
         >
-          <Link href="/">
+          <Box
+            onClick={() => navigate("/")}
+            sx={{
+              _hover: {
+                cursor: "pointer",
+              },
+            }}
+          >
             <Image width="160px" h="60px" src={logo} />
-          </Link>
+          </Box>
           <Desktop />
           <Mobile />
         </Container>
