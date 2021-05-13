@@ -24,8 +24,8 @@ const theme = extendTheme({
     button: "18px",
   },
   fonts: {
-    heading: "Titillium Web, sans-serif",
-    body: "Titillium Web, sans-serif",
+    heading: "Play, sans-serif",
+    body: "Play, sans-serif",
   },
   radii: {
     small: "8px",
@@ -112,7 +112,7 @@ const theme = extendTheme({
       variants: {
         subtitle: {
           fontSize: ["subtitlem", null, null, "subtitle"],
-          fontWeight: "bold",
+          fontWeight: "normal",
           lineHeight: ["subtitlem", null, null, "subtitle"],
         },
         caption: {
@@ -123,12 +123,13 @@ const theme = extendTheme({
       },
     },
     Heading: {
+      baseStyle: { fontWeight: "normal" },
       variants: {
         h1: {
           color: "basic.5",
           fontSize: "h1",
           lineHeight: ["h1m", null, null, "h1"],
-          fontWeight: "bold",
+
           mt: 0,
           mb: 4,
         },
@@ -136,7 +137,7 @@ const theme = extendTheme({
           color: "basic.5",
           fontSize: ["h2m", null, null, "h2"],
           lineHeight: ["h2m", null, null, "h2"],
-          fontWeight: "bold",
+
           mt: 0,
           mb: 3,
         },
@@ -144,7 +145,6 @@ const theme = extendTheme({
           color: "basic.5",
           fontSize: ["h3m", null, null, "h3"],
           lineHeight: ["h3m", null, null, "h3"],
-          fontWeight: "bold",
         },
       },
     },

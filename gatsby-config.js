@@ -16,7 +16,6 @@ module.exports = {
     twitter: "",
     facebook: "",
     youtube: "",
-    supportEmail: "andreitsiv.mykhailo@gmail.com",
   },
   plugins: [
     {
@@ -76,7 +75,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Titillium Web"],
+          families: ["Play"],
         },
       },
     },

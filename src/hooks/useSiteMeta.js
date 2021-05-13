@@ -18,7 +18,6 @@ const useSiteMetadata = () => {
           publisherEmail
           disclaimer
           address
-          supportEmail
         }
       }
     }
