@@ -1,8 +1,7 @@
 import React, { Fragment, useState } from "react";
-import { Box, Button, Link } from "@chakra-ui/react";
-
-// import MenuIcon from "./img/menu.inline.svg";
-// import MenuClose from "./img/close.inline.svg";
+import { Box } from "@chakra-ui/react";
+import Link from "Components/link";
+import { MdMenu, MdClose } from "react-icons/md";
 
 const Mobile = () => {
   const [isOpen, toggleOpen] = useState(false);
@@ -17,14 +16,17 @@ const Mobile = () => {
           position: "relative",
         }}
       >
-        <Button
+        <Box
+          bg="basic.0"
+          color="basic.5"
           display="flex"
+          borderRadius="medium"
           aria-label="hamburger menu"
           p={2}
           onClick={() => toggleOpen(!isOpen)}
         >
-          |||
-        </Button>
+          <Box as={MdMenu} color="basic.5" />
+        </Box>
 
         <Box
           width="320px"
@@ -40,43 +42,24 @@ const Mobile = () => {
             zIndex: 1000,
           }}
         >
-          <Button
+          <Box
             display="flex"
             aria-label="close button"
-            ml="auto"
             p={2}
             onClick={() => toggleOpen(false)}
           >
-            x
-          </Button>
+            <Box as={MdClose} color="basic.5" />
+          </Box>
 
-          <Link
-            href="/how-it-works/"
-            variant="headerLink"
-            display="block"
-            py={2}
-            mx={0}
-          >
+          <Link href="/how-it-works/" variant="mobileLink" py={2} mx={0}>
             How it works
           </Link>
 
-          <Link
-            href="/our-writers/"
-            variant="headerLink"
-            display="block"
-            py={2}
-            mx={0}
-          >
-            Top writers
+          <Link href="/about/" variant="mobileLink" py={2} mx={0}>
+            About
           </Link>
-          <Link
-            href="/contact-us/"
-            variant="headerLink"
-            display="block"
-            py={2}
-            mx={0}
-          >
-            Contact us
+          <Link href="/contacts/" variant="mobileLink" py={2} mx={0}>
+            Contacts
           </Link>
         </Box>
       </Box>

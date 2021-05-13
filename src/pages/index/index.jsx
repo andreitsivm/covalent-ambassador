@@ -4,12 +4,12 @@ import Container from "Components/container";
 import Row, { Column, FluidItem } from "Components/row";
 import pageMeta from "./pageMeta.json";
 import { Box, Heading, Text, Image } from "@chakra-ui/react";
-import banner from "Img/banner.svg";
+import banner from "Img/bg-index.jpg";
 import covalent from "Img/logo.svg";
 
-const Index = () => {
+const Index = (props) => {
   return (
-    <Page {...pageMeta}>
+    <Page {...pageMeta} {...props}>
       <Box
         sx={{
           backgroundImage: `url(${banner})`,
@@ -18,9 +18,15 @@ const Index = () => {
         }}
       >
         <Container py="256px">
-          <Heading color="basic.0" variant="h1" as="h1" textAlign="center">
-            Covalent
-          </Heading>
+          <Box maxW={{ base: "100%", md: "60%" }}>
+            <Heading color="basic.0" variant="h1" as="h1" textAlign="center">
+              Один уніфікований API. Один мільярд можливостей.
+            </Heading>
+            <Text textAlign="center" variant="subtitle" color="basic.0">
+              Covalent забезпечує уніфікований API, що забезпечує видимість до
+              мільярдів точок даних блокчейну.
+            </Text>
+          </Box>
         </Container>
       </Box>
 

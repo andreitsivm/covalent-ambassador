@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Flex, Box, Image, Heading } from "@chakra-ui/react";
+import { Flex, Box, Image } from "@chakra-ui/react";
 import Link from "Components/link";
 
 import Container from "Components/container";

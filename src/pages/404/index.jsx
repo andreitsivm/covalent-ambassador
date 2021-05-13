@@ -1,14 +1,13 @@
-import React from "react";
+import * as React from "react";
 import Page from "Components/page";
-
 import pageMeta from "./pageMeta.json";
 
-const Contacts = (props) => {
+const NotFoundPage = (props) => {
   return (
     <Page {...pageMeta} {...props}>
-      Contacts
+      Page not found
     </Page>
   );
 };
 
-export default Contacts;
+export default NotFoundPage;

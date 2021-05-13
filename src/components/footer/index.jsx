@@ -44,7 +44,7 @@ const Footer = () => {
               isExternal
               href="https://www.covalenthq.com/docs/api/#overview"
             >
-              Covalen API
+              Covalent API
             </Link>
             <Link
               variant="footerLink"

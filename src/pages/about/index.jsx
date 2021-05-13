@@ -5,9 +5,11 @@ import Row, { Column } from "Components/row";
 import Container from "Components/container";
 import bg from "Img/bg-1.jpg";
 
-const About = () => {
+import pageMeta from "./pageMeta.json";
+
+const About = (props) => {
   return (
-    <Page>
+    <Page {...pageMeta} {...props}>
       <Box
         bgImage={`url(${bg})`}
         py="150px"

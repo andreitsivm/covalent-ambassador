@@ -90,6 +90,15 @@ const theme = extendTheme({
             textDecoration: "underline",
           },
         },
+        mobileLink: {
+          color: "basic.5",
+          display: "block",
+          _hover: { color: "secondary.0", textDecoration: "none" },
+          _activeLink: {
+            color: "secondary.0",
+            textDecoration: "underline",
+          },
+        },
       },
     },
     Text: {
@@ -146,15 +155,16 @@ const theme = extendTheme({
         fontSize: "button",
         lineHeight: "button",
         fontFamily: "main",
+
         outline: 0,
         px: "24px",
         py: "14px",
-        boxShadow: "small",
         color: "basic.0",
-        backgroundColor: "primary",
-        transition: "box-shadow 0.3s ease",
+        bg: "secondary.0",
+        transition: "background-color 0.3s ease",
         _hover: {
-          boxShadow: "large",
+          bg: "primary",
+          textDecoration: "none",
         },
       },
       sizes: {

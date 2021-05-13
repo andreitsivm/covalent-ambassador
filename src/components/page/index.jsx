@@ -44,12 +44,6 @@ const Page = ({
             height: 100%;
           }
 
-          input::-webkit-outer-spin-button,
-          input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-          }
-
           #gatsby-noscript {
             width: 100%;
             padding: 4px 0;
