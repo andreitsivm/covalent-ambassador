@@ -128,6 +128,7 @@ const theme = extendTheme({
           lineHeight: ["subtitlem", null, null, "subtitle"],
         },
         caption: {
+          color: "basic.4",
           fontSize: "caption",
           fontWeight: "normal",
           lineHeight: "caption",

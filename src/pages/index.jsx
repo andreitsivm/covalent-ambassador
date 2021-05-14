@@ -23,8 +23,8 @@ const Index = (props) => {
               Один уніфікований API. Один мільярд можливостей.
             </Heading>
             <Text textAlign="center" variant="subtitle" color="basic.0">
-              Covalent забезпечує уніфікований API, що забезпечує видимість до
-              мільярдів точок даних блокчейну.
+              Covalent забезпечує уніфікований API, що дає змогу отримати доступ
+              до мільярдів точок даних блокчейну.
             </Text>
           </Box>
         </Container>
@@ -34,13 +34,13 @@ const Index = (props) => {
         <Container>
           <Row>
             <Column d="flex" flexDirection="column" justifyContent="center">
-              <Heading variant="h2">What is Covalent?</Heading>
+              <Heading variant="h2">Що таке ковалент?</Heading>
               <Text>
-                Covalent provides a unified API to bring full transparency and
-                visibility to assets across all blockchain networks. Simply put,
-                we have a single API which allows you to pull detailed, granular
-                blockchain transaction data from multiple blockchains with no
-                code.
+                Covalent забезпечує уніфікований API, щоб дає повну прозорість
+                та видимість активів у всіх мережах блокчейнів. Простіше кажучи,
+                у нас є єдиний API, який дозволяє отримати детальний, детальний
+                дані транзакцій блокчейну з декількох блокчейнів без
+                використання коду.
               </Text>
             </Column>
             <Column
@@ -55,52 +55,52 @@ const Index = (props) => {
       <Box py={5} textAlign={{ base: "center", md: "left" }}>
         <Container>
           <FluidItem>
-            <Heading variant="h1">What makes Covalent unique?</Heading>
+            <Heading variant="h1">У чому унікальність Covalent</Heading>
             <Text variant="subtitle">
-              There are many elements of the Covalent which make us unique in
-              the marketplace. However, our core differentiators from projects
-              like the Graph are:
+              Є багато елементів Covalent, які роблять нас унікальними на ринку.
+              Однак наші основні відмінники від проектів як Graph:
             </Text>
             <Box>
-              <Heading>1. Data availability</Heading>
+              <Heading>1. Досутпність даних</Heading>
               <Text>
-                We are the only project to fully index entire blockchains – this
-                means every single contract, every single wallet address, and
-                every single transaction. This is billions of rows of data and
-                terabytes of data. Other projects only provide a small subset of
-                the available data or only start collecting data once the
-                appropriate query or filter is set up.
+                Ми єдиний проект, який повністю індексує цілі блокчейни - це
+                означає кожен окремий контракт, кожну адресу гаманця та кожну
+                окрему транзакція. Це мільярди рядків даних і терабайт даних.
+                Інші проекти надають лише невелику частину доступни даних або
+                починають збирати дані лише після того, як налаштовано
+                відповідний запит або фільтр.
               </Text>
             </Box>
             <Box>
-              <Heading>2. Composability</Heading>
+              <Heading>2. Компонування</Heading>
               <Text>
-                Composability is a critical piece of Decentralized Finance
-                (DeFi) applications and allows developers to quickly and easily
-                construct financial solutions leveraging 'Lego-like' building
-                blocks from a multitude of projects. The multichain flexiblity
-                and deep, granular data provided by our APIs means developers
-                can quickly and easily build scalable and data rich applications
-                with no query code.
+                Компонувальність є найважливішим елементом децентралізованих
+                фінансових (DeFi) додатків і дозволяє розробникам швидко і легко
+                розробити фінансові рішення, використовуючи будівництво блоків з
+                безлічі проектівб подібно до конструктора "Lego". Багатоканальна
+                гнучкість та глибокі, детальні дані, надані нашими API,
+                означають, що розробники зможуть швидко і легко створювати
+                масштабовані програми, багаті на дані без написання великого
+                об'єму коду для запиту.
               </Text>
             </Box>
             <Box>
-              <Heading>3. Multi-blockchain support</Heading>
+              <Heading>3. Підтримка декількох блокчейнів</Heading>
               <Text>
-                Multichain is in our DNA. Covalent already indexes and has
-                customers on 7 different blockchain networks with many more to
-                announce soon.
+                Багатоланцюговість у нашій ДНК. Covalent вже індексує і має
+                клієнтів в 7 різних мережах блокчейну, і ще більше оголосить
+                найближчим часом.
               </Text>
             </Box>
             <Box>
-              <Heading>4. No code solutiony</Heading>
+              <Heading>4. Рішення без коду</Heading>
               <Text>
-                We believe in no-code solutions for our users. This means no
-                complicated SQL queries, no subgraph development and
-                maintenance, and no need to invest in highly-skilled (read
-                expensive) developers to simply retrieve blockchain data, which
-                is a monumental waste of engineering time. One API and you are
-                done.
+                Ми віримо в рішення без коду для наших користувачів. Це означає,
+                що немає складних запитів SQL, відсутність розробки підграфа та
+                обслуговування, не потрібно інвестувати у висококваліфікованих
+                та дорогих розробників, щоб просто отримати дані блокчейну, що
+                насамперед є монументальною втратою інженерного часу. Один API —
+                і вce готово.
               </Text>
             </Box>
           </FluidItem>

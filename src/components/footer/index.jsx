@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Image, Heading } from "@chakra-ui/react";
+import { Box, Image, Heading, Text } from "@chakra-ui/react";
 import {
   FaDiscord,
   FaTelegramPlane,
@@ -9,9 +9,11 @@ import {
 import Link from "Components/link";
 import Row, { Column } from "Components/row";
 import Container from "Components/container";
+import useSiteMeta from "Hooks/useSiteMeta";
 import logo from "Img/logo-v.svg";
 
 const Footer = () => {
+  const { copyright, currentYear } = useSiteMeta();
   return (
     <Box as="footer" bg="basic.5" py={5}>
       <Container>
@@ -72,9 +74,9 @@ const Footer = () => {
           }}
         />
         <Row alignItems="center">
-          <Column d="flex" alignItems="center" mb={{ base: "24px", md: "0" }}>
-            <Image width="60px" height="60px" src={logo} mr={2} />
-            <Heading as="div" variant="h3" color="basic.0">
+          <Column d="flex" mb={{ base: "24px", md: "0" }}>
+            <Image width="48px" height="48px" src={logo} mr={2} />
+            <Heading as="div" variant="h2" color="basic.0" fontSize="48px">
               Covalent
             </Heading>
           </Column>
@@ -97,6 +99,11 @@ const Footer = () => {
             </Link>
           </Box>
         </Row>
+      </Container>
+      <Container>
+        <Text textAlign="center" variant="caption">
+          &copy; {`${currentYear} ${copyright}`}
+        </Text>
       </Container>
     </Box>
   );

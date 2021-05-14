@@ -1,18 +1,18 @@
 const TITLE = "Covalent UA";
-const HOST = "https://covalent.com.ua";
+const HOST = "https://covalent-web-ua.vercel.app/";
 
 module.exports = {
   siteMetadata: {
     title: TITLE,
-    description: "Covalent alchemists website",
+    description: "Covalent alchemists website for Ukrainian community",
     siteUrl: HOST,
-    author: "andreitsiv.mykhailo@gmail.com",
-    disclaimer: "Not commercial",
-    address: "Ukraine, Kyiv",
+    author: "Mykhailo Andreitsiv <andreitsivdev@gmail.com>",
+    disclaimer: "Covalent",
+    address: " #602 -- 151, вул. В. Гастінкса, Ванкувер, BC V6B 1H4, Канада",
     publisherEmail: "",
     currentYear: new Date().getFullYear(),
     foundationYear: 2021,
-    copyright: "Covalent - UA. All rights reserved",
+    copyright: "Covalent. All rights reserved",
     twitter: "",
     facebook: "",
     youtube: "",

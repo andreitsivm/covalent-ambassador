@@ -33,10 +33,10 @@ const About = (props) => {
       </Box>
       <Box py={6}>
         <Container textAlign={{ base: "center", md: "left" }}>
-          <Heading variant="h1">Ми єдині назад у космос</Heading>
+          <Heading variant="h1">Єдині та неповторні</Heading>
           <Text>
-            Ми розподілена команда з 30 осіб, яка працює понад 100 років
-            сукупного досвіду криптографії.
+            Ми розподілена команда з 30 осіб, яка що має понад 100 років
+            сукупного досвіду з криптою.
           </Text>
           <Row>
             <Column mb={{ base: "30px", md: "0" }}>

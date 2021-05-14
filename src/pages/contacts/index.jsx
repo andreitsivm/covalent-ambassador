@@ -11,6 +11,7 @@ import atom from "Img/covalent-atom.svg";
 import pageMeta from "./pageMeta.json";
 
 const Contacts = (props) => {
+  const { address } = props;
   return (
     <Page {...pageMeta} {...props}>
       <Box
@@ -24,21 +25,22 @@ const Contacts = (props) => {
         <Container>
           <Box maxW={{ base: "100%", md: "45%" }}>
             <Heading as="h1" variant="h1" color="basic.0">
-              Контакти
+              Зв'яжіться з нами
             </Heading>
             <Text color="basic.0" variant="subtitle">
-              Глибокий досвід у галузі фінансів, блокчейнів, баз даних та
-              розподілених систем.
+              Якщо у вас є питання або пропозиції звертайтесь до представників
+              головного офісу
             </Text>
           </Box>
         </Container>
       </Box>
       <Container py={10} textAlign={{ base: "center", md: "left" }}>
+        <Heading as="h2">Контакти</Heading>
         <Row>
           <Column>
-            <Heading variant="subtitle ">Email</Heading>{" "}
+            <Heading variant="subtitle ">Електронна пошта</Heading>{" "}
             <Box mb={{ base: "8px", md: "0" }}>
-              <Link isExternal href="mailto:contact@covalenthq.com">
+              <Link isExernal href="mailto:contact@covalenthq.com">
                 contact@covalenthq.com
               </Link>
             </Box>
@@ -47,10 +49,7 @@ const Contacts = (props) => {
                 sales@covalenthq.com
               </Link>
             </Box>
-            <Heading>Covalent Global Headquarters</Heading>{" "}
-            <Text isExternal href="mailto:contact@covalenthq.com">
-              #602 -- 151, W. Hastings St. Vancouver, BC V6B 1H4, Canada
-            </Text>
+            <Heading>Глобальний штаб Covalent</Heading> <Text>{address}</Text>
           </Column>
           <Column d="flex" justifyContent={"center"}>
             <Image src={atom} alt="covalent atom" />
