@@ -14,18 +14,28 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         Hooks: path.resolve(__dirname, "src/hooks"),
         Static: path.resolve(__dirname, "static"),
         Utils: path.resolve(__dirname, "src/utils"),
+        Templates: path.resolve(__dirname, "src/templates"),
       },
     },
   });
 };
 
-// /**
-//  * @param {Object} data
-//  * @param {Object} data.page
-//  * @param {string} data.page.componentPath
-//  * @param {Object} actions
-//  * @returns {Promise<unknown>}
-//  */
+/**
+ * @param {Object} data
+ * @param {Object} data.page
+ * @param {string} data.page.componentPath
+ * @param {Object} actions
+ * @returns {Promise<unknown>}
+ */
+exports.onCreatePage = async ({ page, actions }) => {
+  const { createPage, deletePage } = actions;
+
+  if (page.path.match(/^\/app/)) {
+    page.matchPath = "/app/*";
+    createPage(page);
+  }
+};
+
 // exports.onCreatePage = async ({ page, actions }) => {
 //   const { createPage, deletePage } = actions;
 

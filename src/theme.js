@@ -87,6 +87,10 @@ const theme = extendTheme({
           _hover: {
             color: "secondary.0",
           },
+          _activeLink: {
+            color: "secondary.0",
+            textDecoration: "underline",
+          },
         },
         headerLink: {
           fontSize: "body",

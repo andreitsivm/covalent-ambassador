@@ -54,6 +54,14 @@ const Footer = () => {
               Документація
             </Link>
           </Column>
+          <Column>
+            <Heading as="h3" variant="h3" color="basic.0" mb={3}>
+              Використання
+            </Heading>
+            <Link variant="footerLink" href="/app/diagram">
+              Графік
+            </Link>
+          </Column>
         </Row>
         <Box
           my={5}

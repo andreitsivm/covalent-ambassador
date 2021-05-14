@@ -1,10 +1,12 @@
 import React from "react";
 import Page from "Components/page";
 import Link from "Components/link";
-import { Box, Button, Heading, Text, Flex } from "@chakra-ui/react";
+import { Box, Button, Heading, Text, Flex, Image } from "@chakra-ui/react";
 import Container from "Components/container";
+import Row, { Column } from "Components/row";
 import bg from "Img/bg-2.jpg";
 import banner from "Img/banner.svg";
+import diagram from "Img/diagram.jpg";
 import pageMeta from "./pageMeta.json";
 
 const HowItWorks = (props) => {
@@ -34,6 +36,32 @@ const HowItWorks = (props) => {
               блокчейну.
             </Text>
           </Box>
+        </Container>
+      </Box>
+      <Box>
+        <Container py={{ base: 5, md: 10 }}>
+          <Row>
+            <Column>
+              <Image src={diagram} alt="diagram" />
+            </Column>
+            <Column
+              ml={{ base: 0, md: 5 }}
+              d="flex"
+              flexDirection="column"
+              justifyContent="center"
+            >
+              <Heading variant="h1">Швидко та доступно</Heading>
+              <Text>
+                З використанням Covalent API ви можете швидко отримувати
+                різноманітну інформацію про транзакції, вартість валюти,
+                котирування.
+              </Text>
+              <Text>
+                Якщо вам буде цікаво перегляньте наш{" "}
+                <Link href="/app/diagram/">приклад</Link>
+              </Text>
+            </Column>
+          </Row>
         </Container>
       </Box>
       <Box py={10} bgGradient="linear-gradient(to-l, secondary.1, basic.5)">
