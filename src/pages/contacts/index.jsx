@@ -7,11 +7,11 @@ import Row, { Column } from "Components/row";
 import Link from "Components/link";
 import bg from "Img/bg-4.jpg";
 import atom from "Img/covalent-atom.svg";
-
+import useSiteMeta from "Hooks/useSiteMeta";
 import pageMeta from "./pageMeta.json";
 
 const Contacts = (props) => {
-  const { address } = props;
+  const { address } = useSiteMeta();
   return (
     <Page {...pageMeta} {...props}>
       <Box

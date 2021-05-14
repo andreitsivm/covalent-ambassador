@@ -14,6 +14,7 @@ import moment from "moment";
 import {
   Select,
   Box,
+  Text,
   Input,
   Heading,
   FormControl,
@@ -47,8 +48,14 @@ const Diagram = () => {
     <>
       <Container py={{ base: "32px", md: "64px" }}>
         <Heading textAlign="center" variant="h1">
-          Diagram builder
+          Практичне застосування
         </Heading>
+        <Text textAlign="center" variant="subtitle">
+          Завдяки Covalent API ми з легкістю отримуємо дані, які потрібні
+          наприклад для візуалізації графіків курсу криптовалю у протягом
+          певного часу. Ми може гнучко змінювати вихідні дані, там шкидко
+          отримувати результат з миттєвою перебудовою графіку
+        </Text>
         <Box
           mb={10}
           display="flex"
@@ -60,7 +67,7 @@ const Diagram = () => {
             mb={{ base: "16px", md: "0" }}
             mr={{ base: "0", md: "16px" }}
           >
-            <FormLabel>Select ticker</FormLabel>
+            <FormLabel>Тікер</FormLabel>
             <Select
               value={ticker}
               onChange={(event) => setTicker(event.target.value)}
@@ -72,14 +79,14 @@ const Diagram = () => {
               <option value="UNI">UNI</option>
               <option value="VEN">VEN</option>
             </Select>
-            <FormHelperText>Crypto Name</FormHelperText>
+            <FormHelperText>Оберіть абревіатуру криптовалюти</FormHelperText>
           </FormControl>
 
           <FormControl
             mb={{ base: "16px", md: "0" }}
             mr={{ base: "0", md: "16px" }}
           >
-            <FormLabel>Select currency</FormLabel>
+            <FormLabel>Валюта</FormLabel>
             <Select
               value={currency}
               onChange={(event) => setCurrency(event.target.value)}
@@ -89,35 +96,39 @@ const Diagram = () => {
               <option value="RUB">RUB</option>
               <option value="CNY">CNY</option>
             </Select>
-            <FormHelperText>National currency</FormHelperText>
+            <FormHelperText>Оберіть національну валюту</FormHelperText>
           </FormControl>
 
           <FormControl
             mb={{ base: "16px", md: "0" }}
             mr={{ base: "0", md: "16px" }}
           >
-            <FormLabel>Date from</FormLabel>
+            <FormLabel>Початкова дата</FormLabel>
             <Input
               id="date-from"
               type="date"
               onChange={(e) => setDateFrom(e.target.value)}
               value={dateFrom}
             />
-            <FormHelperText>Date of start drawing diagram</FormHelperText>
+            <FormHelperText>
+              Результат буде отриманий від цієї дати
+            </FormHelperText>
           </FormControl>
 
           <FormControl
             mb={{ base: "16px", md: "0" }}
             mr={{ base: "0", md: "16px" }}
           >
-            <FormLabel>Date to</FormLabel>
+            <FormLabel>Кінцева дата</FormLabel>
             <Input
               id="date-to"
               type="date"
               onChange={(e) => setDateTo(e.target.value)}
               value={dateTo}
             />
-            <FormHelperText>Date of end drawing diagram</FormHelperText>
+            <FormHelperText>
+              Результат буде отриманий до вказаної дати
+            </FormHelperText>
           </FormControl>
         </Box>
         <div style={{ width: "100%", height: "500px" }}>
