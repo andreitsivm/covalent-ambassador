@@ -36,6 +36,20 @@ const Footer = () => {
             >
               YouTube
             </Link>
+            <Link
+              variant="footerLink"
+              isExternal
+              href="https://medium.com/covalent-hq"
+            >
+              Medium
+            </Link>
+            <Link
+              variant="footerLink"
+              isExternal
+              href="https://www.notion.so/The-Covalent-Alchemist-Laboratory-d8f9d300e9ba4982840b84342090cfed"
+            >
+              Notion
+            </Link>
           </Column>
           <Column>
             <Heading as="h3" variant="h3" color="basic.0" mb={3}>
@@ -54,14 +68,6 @@ const Footer = () => {
               href="https://www.covalenthq.com/docs/"
             >
               Документація
-            </Link>
-          </Column>
-          <Column>
-            <Heading as="h3" variant="h3" color="basic.0" mb={3}>
-              Використання
-            </Heading>
-            <Link variant="footerLink" href="/app/diagram">
-              Графік
             </Link>
           </Column>
         </Row>

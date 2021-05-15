@@ -3,10 +3,14 @@ import Page from "Components/page";
 import { Box, Heading, Text, Flex, Image } from "@chakra-ui/react";
 import Row, { Column } from "Components/row";
 import Container from "Components/container";
+import Card from "Components/about-card";
 import bg from "Img/bg-1.jpg";
 import ganesh from "Img/ganesh.jpg";
 import levi from "Img/levi.jpg";
 import adrian from "Img/adrian.jpg";
+import jackie from "Img/jackie.jpg";
+import erik from "Img/erik.jpg";
+import rohit from "Img/rohit.jpg";
 
 import pageMeta from "./pageMeta.json";
 
@@ -31,7 +35,7 @@ const About = (props) => {
           </Text>
         </Container>
       </Box>
-      <Box py={6}>
+      <Box py={10}>
         <Container textAlign={{ base: "center", md: "left" }}>
           <Heading variant="h1">Єдині та неповторні</Heading>
           <Text>
@@ -125,6 +129,21 @@ const About = (props) => {
                   </Text>
                 </Box>
               </Flex>
+            </Column>
+          </Row>
+          <Row mt="24px">
+            <Column>
+              <Card
+                image={jackie}
+                name="Жаклін Кім Перез"
+                status="Токен Маркетинг"
+              />
+            </Column>
+            <Column>
+              <Card image={erik} name="Ерік Ешдоун" status="Екосистема" />
+            </Column>
+            <Column>
+              <Card image={rohit} name="Рогіт Тандом" status="Дизайн" />
             </Column>
           </Row>
         </Container>

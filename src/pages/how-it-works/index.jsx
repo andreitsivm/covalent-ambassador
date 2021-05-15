@@ -5,8 +5,9 @@ import { Box, Button, Heading, Text, Flex, Image } from "@chakra-ui/react";
 import Container from "Components/container";
 import Row, { Column } from "Components/row";
 import bg from "Img/bg-2.jpg";
-import banner from "Img/banner.svg";
-import diagram from "Img/diagram.jpg";
+
+import planet from "Img/planet.jpg";
+import alchemist from "Img/alchemist.png";
 import pageMeta from "./pageMeta.json";
 
 const HowItWorks = (props) => {
@@ -42,7 +43,7 @@ const HowItWorks = (props) => {
         <Container py={{ base: 5, md: 10 }}>
           <Row>
             <Column>
-              <Image src={diagram} alt="diagram" />
+              <Image sx={{ borderRadius: "large" }} src={planet} alt="planet" />
             </Column>
             <Column
               ml={{ base: 0, md: 5 }}
@@ -50,15 +51,13 @@ const HowItWorks = (props) => {
               flexDirection="column"
               justifyContent="center"
             >
-              <Heading variant="h1">Швидко та доступно</Heading>
+              <Heading variant="h1">Індексація процесів</Heading>
               <Text>
-                З використанням Covalent API ви можете швидко отримувати
-                різноманітну інформацію про транзакції, вартість валюти,
-                котирування.
-              </Text>
-              <Text>
-                Якщо вам буде цікаво перегляньте наш{" "}
-                <Link href="/app/diagram/">приклад</Link>
+                Covalent - це важливий компонент інфраструктури наших
+                партнерських блокчейнів, які ми підтримуємо. Ми тісно
+                співпрацюємо з технічними та бізнес-командами цих блокчейнів,
+                щоб розробляти, планувати та виконувати рішення під ключ для
+                розробників, що будують поверх своїх блокчейнів.
               </Text>
             </Column>
           </Row>
@@ -76,7 +75,8 @@ const HowItWorks = (props) => {
               textAlign={{ base: "center", md: "left" }}
               mb={{ base: "24px", md: "0" }}
             >
-              Наші інструменти прості та доступні
+              Інструменти ковалент легкі у використанні <br />
+              Якщо у вас є досвід розробника вам буде цікаво
             </Heading>{" "}
             <Link
               sx={{ _hover: { textDecoration: "none" } }}
@@ -88,13 +88,44 @@ const HowItWorks = (props) => {
           </Flex>
         </Container>
       </Box>
-      <Box
-        bgImage={`url(${banner})`}
-        py="250px"
-        bgPosition="center"
-        bgRepeat="no-repeat"
-        bgSize="cover"
-      ></Box>
+      <Box bg="secondary.2">
+        <Container py={{ base: 5, md: 10 }}>
+          <Row>
+            <Column
+              ml={{ base: 0, md: 5 }}
+              d="flex"
+              flexDirection="column"
+              justifyContent="center"
+            >
+              <Heading color="basic.0" variant="h1">
+                Covalent підтримує:
+              </Heading>
+              <Text color="basic.0" variant="h3">
+                1. Ethereum
+              </Text>
+              <Text color="basic.0" variant="h3">
+                2. Avalanche C-Chain
+              </Text>
+              <Text color="basic.0" variant="h3">
+                3. Binance Smart Chain
+              </Text>
+              <Text color="basic.0" variant="h3">
+                4. Matic
+              </Text>
+              <Text color="basic.0" variant="h3">
+                5. Fantom
+              </Text>
+            </Column>
+            <Column>
+              <Image
+                sx={{ borderRadius: "large" }}
+                src={alchemist}
+                alt="alchemist"
+              />
+            </Column>
+          </Row>
+        </Container>
+      </Box>
     </Page>
   );
 };

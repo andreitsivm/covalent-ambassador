@@ -3,6 +3,7 @@ import Page from "Components/page";
 import Container from "Components/container";
 import Row, { Column, FluidItem } from "Components/row";
 import pageMeta from "./pageMeta.json";
+import Diagram from "Components/diagram";
 import { Box, Heading, Text, Image } from "@chakra-ui/react";
 import banner from "Img/bg-index.jpg";
 import covalent from "Img/logo.svg";
@@ -30,11 +31,17 @@ const Index = (props) => {
         </Container>
       </Box>
 
-      <Box py={5} textAlign={{ base: "center", md: "left" }}>
+      <Box py={10} textAlign={{ base: "center", md: "left" }}>
         <Container>
           <Row>
+            <Column
+              d="flex"
+              justifyContent={{ base: "center", md: "flex-start" }}
+            >
+              <Image src={covalent} />
+            </Column>
             <Column d="flex" flexDirection="column" justifyContent="center">
-              <Heading variant="h2">Що таке ковалент?</Heading>
+              <Heading variant="h1">Що таке ковалент?</Heading>
               <Text>
                 Covalent забезпечує уніфікований API, щоб дає повну прозорість
                 та видимість активів у всіх мережах блокчейнів. Простіше кажучи,
@@ -42,12 +49,6 @@ const Index = (props) => {
                 дані транзакцій блокчейну з декількох блокчейнів без
                 використання коду.
               </Text>
-            </Column>
-            <Column
-              d="flex"
-              justifyContent={{ base: "center", md: "flex-end" }}
-            >
-              <Image src={covalent} />
             </Column>
           </Row>
         </Container>
@@ -65,8 +66,8 @@ const Index = (props) => {
               <Text>
                 Ми єдиний проект, який повністю індексує цілі блокчейни - це
                 означає кожен окремий контракт, кожну адресу гаманця та кожну
-                окрему транзакція. Це мільярди рядків і терабайт даних.
-                Інші проекти надають лише невелику частину доступної інформації або
+                окрему транзакція. Це мільярди рядків і терабайт даних. Інші
+                проекти надають лише невелику частину доступної інформації або
                 починають збирати дані лише після того, як налаштовано
                 відповідний запит або фільтр.
               </Text>
@@ -76,12 +77,12 @@ const Index = (props) => {
               <Text>
                 Компонувальність є найважливішим елементом децентралізованих
                 фінансових (DeFi) додатків і дозволяє розробникам швидко і легко
-                розробити фінансові рішення, використовуючи  для будівництва блоки з
-                безлічі проектів, подібно до конструктора "Lego". Багатоканальна
-                гнучкість та глибокі, детальні дані, які надані нашим API,
-                означають, що розробники зможуть швидко і легко створювати
-                масштабовані програми, багаті на інформацію, без написання великого
-                об'єму коду для запиту.
+                розробити фінансові рішення, використовуючи для будівництва
+                блоки з безлічі проектів, подібно до конструктора "Lego".
+                Багатоканальна гнучкість та глибокі, детальні дані, які надані
+                нашим API, означають, що розробники зможуть швидко і легко
+                створювати масштабовані програми, багаті на інформацію, без
+                написання великого об'єму коду для запиту.
               </Text>
             </Box>
             <Box>
@@ -105,6 +106,7 @@ const Index = (props) => {
             </Box>
           </FluidItem>
         </Container>
+        <Diagram />
       </Box>
     </Page>
   );

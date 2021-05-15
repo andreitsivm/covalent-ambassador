@@ -19,36 +19,3 @@ exports.onCreateWebpackConfig = ({ actions }) => {
     },
   });
 };
-
-/**
- * @param {Object} data
- * @param {Object} data.page
- * @param {string} data.page.componentPath
- * @param {Object} actions
- * @returns {Promise<unknown>}
- */
-exports.onCreatePage = async ({ page, actions }) => {
-  const { createPage, deletePage } = actions;
-
-  if (page.path.match(/^\/app/)) {
-    page.matchPath = "/app/*";
-    createPage(page);
-  }
-};
-
-// exports.onCreatePage = async ({ page, actions }) => {
-//   const { createPage, deletePage } = actions;
-
-//   return new Promise((resolve) => {
-//     if (page.path === "/index/") {
-//       deletePage(page);
-//       createPage({
-//         ...page,
-//         path: "/",
-//         matchPath: "/",
-//       });
-//     }
-
-//     resolve();
-//   });
-// };
