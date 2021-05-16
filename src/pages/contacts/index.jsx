@@ -25,12 +25,8 @@ const Contacts = (props) => {
         <Container>
           <Box maxW={{ base: "100%", md: "45%" }}>
             <Heading as="h1" variant="h1" color="basic.0">
-              Зв'яжіться з нами
+              Contact us
             </Heading>
-            <Text color="basic.0" variant="subtitle">
-              Якщо у вас є питання або пропозиції звертайтесь до представників
-              головного офісу
-            </Text>
           </Box>
         </Container>
       </Box>
@@ -40,9 +36,8 @@ const Contacts = (props) => {
             <Column d="flex" mr={{ base: 0, md: "30px" }}>
               <Image src={covalent} alt="covalent" />
             </Column>
-            <Column>
-              <Heading variant="h1">Контакти</Heading>
-              <Heading variant="subtitle ">Електронна пошта</Heading>{" "}
+            <Column d="flex" flexDirection="column" justifyContent="center">
+              <Heading variant="subtitle ">Email</Heading>{" "}
               <Box mb={{ base: "8px", md: "0" }}>
                 <Link isExernal href="mailto:contact@covalenthq.com">
                   contact@covalenthq.com
@@ -53,7 +48,8 @@ const Contacts = (props) => {
                   sales@covalenthq.com
                 </Link>
               </Box>
-              <Heading>Глобальний штаб Covalent</Heading> <Text>{address}</Text>
+              <Heading>Covalent Global Headquarters</Heading>{" "}
+              <Text>{address}</Text>
             </Column>
           </Row>
         </Container>

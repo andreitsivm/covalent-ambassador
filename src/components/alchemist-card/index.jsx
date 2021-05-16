@@ -5,7 +5,7 @@ import propTypes from "prop-types";
 const AlchemCard = ({ image, title, description }) => {
   return (
     <Box
-      maxW="370px"
+      maxW={{ base: "100%", md: "370px" }}
       width="100%"
       bg="basic.0"
       mb={{ base: "30px", md: "0" }}

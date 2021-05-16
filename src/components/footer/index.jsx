@@ -41,14 +41,14 @@ const Footer = () => {
           </Column>
           <Column>
             <Heading as="h3" variant="h3" color="basic.0" mb={3}>
-              Спільнота
+              Community
             </Heading>
             <Link
               variant="footerLink"
               isExternal
               href="https://www.covalenthq.com/ambassador/"
             >
-              Амбасадорська програма
+              Ambassador program
             </Link>
             <Link
               variant="footerLink"
@@ -74,7 +74,7 @@ const Footer = () => {
           </Column>
           <Column>
             <Heading as="h3" variant="h3" color="basic.0" mb={3}>
-              Розробка
+              Development
             </Heading>
             <Link
               variant="footerLink"
@@ -88,7 +88,7 @@ const Footer = () => {
               isExternal
               href="https://www.covalenthq.com/docs/"
             >
-              Документація
+              Documentation
             </Link>
           </Column>
         </Row>

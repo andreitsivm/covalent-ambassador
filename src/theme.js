@@ -24,8 +24,8 @@ const theme = extendTheme({
     button: "18px",
   },
   fonts: {
-    heading: "Play, sans-serif",
-    body: "Play, sans-serif",
+    heading: "Titillium Web, sans-serif",
+    body: "Titillium Web, sans-serif",
   },
   radii: {
     small: "8px",

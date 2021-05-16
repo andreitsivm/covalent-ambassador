@@ -4,7 +4,8 @@ const HOST = "https://covalent-ambassador.vercel.app/";
 module.exports = {
   siteMetadata: {
     title: TITLE,
-    description: "Covalent alchemists website whicj help became covalent ambassador, and explain typical procedures",
+    description:
+      "Covalent alchemists website whicj help became covalent ambassador, and explain typical procedures",
     siteUrl: HOST,
     author: "Mykhailo Andreitsiv <andreitsivdev@gmail.com>",
     disclaimer: "Covalent",
@@ -75,7 +76,7 @@ module.exports = {
       resolve: "gatsby-plugin-web-font-loader",
       options: {
         google: {
-          families: ["Play"],
+          families: ["Titillium Web"],
         },
       },
     },

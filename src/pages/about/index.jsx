@@ -13,6 +13,7 @@ import adrian from "Img/adrian.jpg";
 import jackie from "Img/jackie.jpg";
 import erik from "Img/erik.jpg";
 import rohit from "Img/rohit.jpg";
+import planet from "Img/planet.jpg";
 
 import pageMeta from "./pageMeta.json";
 
@@ -29,11 +30,14 @@ const About = (props) => {
         <Container py={{ base: 5, md: "256px" }}>
           <Box maxW={{ base: "100%", md: "60%" }}>
             <Heading color="basic.0" variant="h1" as="h1" textAlign="center">
-              Один уніфікований API. Один мільярд можливостей.
+              One unified API.
+            </Heading>
+            <Heading color="basic.0" variant="h1" textAlign="center">
+              One billion possibilities.
             </Heading>
             <Text textAlign="center" variant="subtitle" color="basic.0">
-              Covalent забезпечує уніфікований API, що дає змогу отримати доступ
-              до мільярдів точок даних блокчейну.
+              Covalent provides a unified API bringing visibility to billions of
+              blockchain data points.
             </Text>
           </Box>
         </Container>
@@ -57,67 +61,78 @@ const About = (props) => {
               />
             </Column>
             <Column d="flex" flexDirection="column" justifyContent="center">
-              <Heading variant="h1">Що таке ковалент?</Heading>
+              <Heading variant="h1">What is Covalent?</Heading>
               <Text>
-                Covalent забезпечує уніфікований API, щоб дає повну прозорість
-                та видимість активів у всіх мережах блокчейнів. Простіше кажучи,
-                у нас є єдиний API, який дозволяє отримати детальний, детальний
-                дані транзакцій блокчейну з декількох блокчейнів без
-                використання коду.
+                Covalent provides a unified API to bring full transparency and
+                visibility to assets across all blockchain networks. Simply put,
+                we have a single API which allows you to pull detailed, granular
+                blockchain transaction data from multiple blockchains with no
+                code.
               </Text>
             </Column>
           </Row>
         </Container>
       </Box>
-      <Box py={5} textAlign={{ base: "center", md: "left" }}>
+      <Box
+        py={5}
+        textAlign={{ base: "center", md: "left" }}
+        bgImage={`url(${planet})`}
+        bgPosition="center"
+        py="150px"
+        bgRepeat="no-repeat"
+        bgSize="cover"
+        backgroundAttachment="fixed"
+      >
         <Container>
           <FluidItem>
-            <Heading variant="h1">У чому унікальність Covalent</Heading>
-            <Text variant="subtitle">
-              Є багато елементів Covalent, які роблять нас унікальними на ринку.
-              Однак наші основні відміностіи від інших проектів, зокрема Graph:
+            <Heading color="basic.0" variant="h1">
+              What makes Covalent unique?
+            </Heading>
+            <Text color="basic.0" variant="subtitle">
+              There are many elements of the Covalent which make us unique in
+              the marketplace. However, our core differentiators from projects
+              like the Graph are:
             </Text>
             <Box>
-              <Heading>1. Доступність даних</Heading>
-              <Text>
-                Ми єдиний проект, який повністю індексує цілі блокчейни - це
-                означає кожен окремий контракт, кожну адресу гаманця та кожну
-                окрему транзакція. Це мільярди рядків і терабайт даних. Інші
-                проекти надають лише невелику частину доступної інформації або
-                починають збирати дані лише після того, як налаштовано
-                відповідний запит або фільтр.
+              <Heading color="basic.0">1. Data availability</Heading>
+              <Text color="basic.0">
+                We are the only project to fully index entire blockchains – this
+                means every single contract, every single wallet address, and
+                every single transaction. This is billions of rows of data and
+                terabytes of data. Other projects only provide a small subset of
+                the available data or only start collecting data once the
+                appropriate query or filter is set up.
               </Text>
             </Box>
             <Box>
-              <Heading>2. Компонування</Heading>
-              <Text>
-                Компонувальність є найважливішим елементом децентралізованих
-                фінансових (DeFi) додатків і дозволяє розробникам швидко і легко
-                розробити фінансові рішення, використовуючи для будівництва
-                блоки з безлічі проектів, подібно до конструктора "Lego".
-                Багатоканальна гнучкість та глибокі, детальні дані, які надані
-                нашим API, означають, що розробники зможуть швидко і легко
-                створювати масштабовані програми, багаті на інформацію, без
-                написання великого об'єму коду для запиту.
+              <Heading color="basic.0">2. Composability</Heading>
+              <Text color="basic.0">
+                Composability is a critical piece of Decentralized Finance
+                (DeFi) applications and allows developers to quickly and easily
+                construct financial solutions leveraging 'Lego-like' building
+                blocks from a multitude of projects. The multichain flexiblity
+                and deep, granular data provided by our APIs means developers
+                can quickly and easily build scalable and data rich applications
+                with no query code.
               </Text>
             </Box>
             <Box>
-              <Heading>3. Підтримка декількох блокчейнів</Heading>
-              <Text>
-                Багатоланцюговість у нашій ДНК. Covalent вже індексує і має
-                клієнтів в 7 різних мережах блокчейну, і ще більше оголосить
-                найближчим часом.
+              <Heading color="basic.0">3. Multi-blockchain support</Heading>
+              <Text color="basic.0">
+                Multichain is in our DNA. Covalent already indexes and has
+                customers on 7 different blockchain networks with many more to
+                announce soon.
               </Text>
             </Box>
             <Box>
-              <Heading>4. Рішення без коду</Heading>
-              <Text>
-                Ми віримо в рішення без коду для наших користувачів. Це означає,
-                що немає складних запитів SQL, відсутність розробки підграфа та
-                обслуговування, не потрібно інвестувати у висококваліфікованих
-                та дорогих розробників, щоб просто отримати дані блокчейну, що
-                насамперед є монументальною втратою інженерного часу. Один API —
-                і вce готово.
+              <Heading color="basic.0">No code solution</Heading>
+              <Text color="basic.0">
+                We believe in no-code solutions for our users. This means no
+                complicated SQL queries, no subgraph development and
+                maintenance, and no need to invest in highly-skilled (read
+                expensive) developers to simply retrieve blockchain data, which
+                is a monumental waste of engineering time. One API and you are
+                done.
               </Text>
             </Box>
           </FluidItem>
@@ -134,123 +149,49 @@ const About = (props) => {
       >
         <Container>
           <Heading as="h1" variant="h1" color="basic.0">
-            Команда яку не зупинити
+            A Team that's Relentless.
           </Heading>
           <Text color="basic.0" variant="subtitle">
-            Глибокий досвід у галузі фінансів, блокчейнів, баз даних та
-            розподілених систем.
+            Deep expertise in finance, blockchains, databases and distributed
+            systems.
           </Text>
         </Container>
       </Box>
       <Box py={10}>
         <Container textAlign={{ base: "center", md: "left" }}>
-          <Heading variant="h1">Єдині та неповторні</Heading>
+          <Heading variant="h1">Unstoppable team</Heading>
           <Text>
-            Ми розподілена команда з 30 осіб, яка що має понад 100 років
-            сукупного досвіду з криптою.
+            We are a 30-person distributed team with over 100 years of
+            cumulative crypto experience.
           </Text>
           <Row>
-            <Column mb={{ base: "30px", md: "0" }}>
-              <Flex
-                alignItems="center"
-                flexDirection={{ base: "column", md: "row" }}
-              >
-                <Box
-                  mb={{ base: "16px", md: "0" }}
-                  mr={{ base: "0", md: "16px" }}
-                >
-                  <Image
-                    sx={{
-                      borderRadius: "small",
-                    }}
-                    maxW="200px"
-                    h="200px"
-                    src={ganesh}
-                    alt="Ganesh Swami"
-                  />
-                </Box>
-                <Box>
-                  <Heading as="h3" variant="h3">
-                    Ганеш Свамі
-                  </Heading>
-                  <Text color="secondary.0" variant="subtitle">
-                    Співзасновник, генеральний директор
-                  </Text>
-                </Box>
-              </Flex>
+            <Column>
+              <Card
+                image={ganesh}
+                name="Ganesh Swami"
+                status="CO-FOUNDER, CEO"
+              />
             </Column>
             <Column>
-              <Flex
-                alignItems="center"
-                flexDirection={{ base: "column", md: "row" }}
-              >
-                <Box
-                  mb={{ base: "16px", md: "0" }}
-                  mr={{ base: "0", md: "16px" }}
-                >
-                  <Image
-                    sx={{
-                      borderRadius: "small",
-                    }}
-                    maxW="200px"
-                    h="200px"
-                    src={levi}
-                    alt="Levi Aul"
-                  />
-                </Box>
-                <Box>
-                  <Heading as="h3" variant="h3">
-                    Леві Оул
-                  </Heading>
-                  <Text color="secondary.0" variant="subtitle">
-                    Співзасновник, Технічний директор
-                  </Text>
-                </Box>
-              </Flex>
+              <Card image={levi} name="Levi Aul" status="CO-FOUNDER, CTO" />
             </Column>
             <Column>
-              <Flex
-                alignItems="center"
-                flexDirection={{ base: "column", md: "row" }}
-              >
-                <Box
-                  mb={{ base: "16px", md: "0" }}
-                  mr={{ base: "0", md: "16px" }}
-                >
-                  <Image
-                    sx={{
-                      borderRadius: "small",
-                    }}
-                    maxW="200px"
-                    h="200px"
-                    src={adrian}
-                    alt="Adrian Jonklaas"
-                  />
-                </Box>
-                <Box>
-                  <Heading as="h3" variant="h3">
-                    Адріан Джонклас
-                  </Heading>
-                  <Text color="secondary.0" variant="subtitle">
-                    Фінансовий директор
-                  </Text>
-                </Box>
-              </Flex>
+              <Card image={adrian} name="Adrian Jonklaas" status="CFO" />
             </Column>
           </Row>
           <Row mt="24px">
             <Column>
               <Card
                 image={jackie}
-                name="Жаклін Кім Перез"
-                status="Токен Маркетинг"
+                name="Jacqueline Kim Perez"
+                status="TOKEN MARKETING"
               />
             </Column>
             <Column>
-              <Card image={erik} name="Ерік Ешдоун" status="Екосистема" />
+              <Card image={erik} name="Erik Ashdown" status="ECOSYSTEM" />
             </Column>
             <Column>
-              <Card image={rohit} name="Рогіт Тандом" status="Дизайн" />
+              <Card image={rohit} name="Rohit Tandon" status="DESIGN" />
             </Column>
           </Row>
         </Container>

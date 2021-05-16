@@ -12,6 +12,8 @@ import valiant from "Img/valiant.png";
 import master from "Img/master.png";
 import bg2 from "Img/bg-1.jpg";
 import bg3 from "Img/bg-2.jpg";
+import space from "Img/space_way.png";
+import titan from "Img/titan.jpg";
 
 const Index = (props) => {
   return (
@@ -40,23 +42,45 @@ const Index = (props) => {
         </Container>
       </Box>
 
-      <Box py={{ base: "32px", md: "64px" }}>
+      <Box
+        py={{ base: "32px", md: "64px" }}
+        bgGradient="linear-gradient(to-b,secondary.1,basic.5,)"
+      >
         <Container>
-          <Heading variant="h1">Covalent Alchemist Expectations</Heading>
-          Anyone can join the Covalent community, but to become a Covalent
-          Alchemist requires a bit more commitment. You are ultimately in
-          control of your growth journey with Covalent. A Covalent Alchemist is
-          a self-starter and autonomous team player who is keen to demonstrate
-          their dedication to the project. We will support your growth and
-          development by supporting you with the tools and coaching to succeed.
-          Every task has a large impact, whether it be joining bi-weekly calls,
-          engaging in group chats to update the community or team, launching
-          campaigns, organizing meetups, or creating content - each Covalent
-          Alchemist will be part of building the new data economy.
+          <Row>
+            <Column d="flex" flexDirection="column" justifyContent="center">
+              <Heading color="basic.0" variant="h1">
+                Covalent Alchemist Expectations
+              </Heading>
+              <Text color="basic.0" pr="24px">
+                Anyone can join the Covalent community, but to become a Covalent
+                Alchemist requires a bit more commitment. You are ultimately in
+                control of your growth journey with Covalent. A Covalent
+                Alchemist is a self-starter and autonomous team player who is
+                keen to demonstrate their dedication to the project. We will
+                support your growth and development by supporting you with the
+                tools and coaching to succeed. Every task has a large impact,
+                whether it be joining bi-weekly calls, engaging in group chats
+                to update the community or team, launching campaigns, organizing
+                meetups, or creating content - each Covalent Alchemist will be
+                part of building the new data economy.
+              </Text>
+            </Column>
+            <Column>
+              <Image src={titan} alt="titan" />
+            </Column>
+          </Row>
         </Container>
       </Box>
 
-      <Box py={{ base: "32px", md: "64px" }} bg="secondary.1">
+      <Box
+        bgImage={`url(${space})`}
+        bgPosition="center"
+        py="150px"
+        bgRepeat="no-repeat"
+        bgSize="cover"
+        backgroundAttachment="fixed"
+      >
         <Container>
           <Heading variant="h2" color="basic.0">
             How to become be part of Covalent Alchemist program?
