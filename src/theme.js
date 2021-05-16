@@ -65,7 +65,7 @@ const theme = extendTheme({
     Link: {
       baseStyle: {
         color: "secondary.0",
-        fontSize: "button",
+        fontSize: "body",
         textDecoration: "none",
         _hover: {
           textDecoration: "underline",

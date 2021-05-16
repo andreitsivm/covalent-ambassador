@@ -80,12 +80,8 @@ const Mobile = () => {
             />
           </Box>
 
-          <Link href="/how-it-works/" variant="mobileLink" py={2} mx={0}>
-            How it works
-          </Link>
-
           <Link href="/about/" variant="mobileLink" py={2} mx={0}>
-            About
+            About Covalent
           </Link>
           <Link href="/contacts/" variant="mobileLink" py={2} mx={0}>
             Contacts

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Image, Heading, Text } from "@chakra-ui/react";
+import { Box, Image, Heading, Text, Flex } from "@chakra-ui/react";
 import {
   FaDiscord,
   FaTelegramPlane,
@@ -10,7 +10,7 @@ import Link from "Components/link";
 import Row, { Column } from "Components/row";
 import Container from "Components/container";
 import useSiteMeta from "Hooks/useSiteMeta";
-import logo from "Img/logo-v.svg";
+import logo from "Img/logo--white.svg";
 
 const Footer = () => {
   const { copyright, currentYear } = useSiteMeta();
@@ -18,6 +18,27 @@ const Footer = () => {
     <Box as="footer" bg="basic.5" py={5}>
       <Container>
         <Row>
+          <Column>
+            <Image width="160px" h="60px" src={logo} />
+            <Box d="flex" mt="16px">
+              <Link mr={3} isExternal href="https://t.me/CovalentHQ">
+                <Box as={FaTelegramPlane} color="#fff" size="24" />
+              </Link>
+              <Link
+                mr={3}
+                isExternal
+                href="https://discord.com/invite/fgZPpq69Dd"
+              >
+                <Box as={FaDiscord} color="basic.0" size="24" />
+              </Link>
+              <Link mr={3} isExternal href="https://twitter.com/covalent_hq">
+                <Box as={FaTwitter} color="#fff" size="24" />
+              </Link>
+              <Link isExternal href="https://www.reddit.com/r/CovalentHQ/">
+                <Box as={FaReddit} color="#fff" size="24" />
+              </Link>
+            </Box>
+          </Column>
           <Column>
             <Heading as="h3" variant="h3" color="basic.0" mb={3}>
               Спільнота
@@ -75,36 +96,10 @@ const Footer = () => {
           my={5}
           sx={{
             height: "3px",
-            bg: "secondary.0",
+            bg: "primary",
             width: "100%",
           }}
         />
-        <Row alignItems="center">
-          <Column d="flex" mb={{ base: "24px", md: "0" }}>
-            <Image width="48px" height="48px" src={logo} mr={2} />
-            <Heading as="div" variant="h2" color="basic.0" fontSize="48px">
-              Covalent
-            </Heading>
-          </Column>
-          <Box d="flex">
-            <Link mr={3} isExternal href="https://t.me/CovalentHQ">
-              <Box as={FaTelegramPlane} color="#fff" size="24" />
-            </Link>
-            <Link
-              mr={3}
-              isExternal
-              href="https://discord.com/invite/fgZPpq69Dd"
-            >
-              <Box as={FaDiscord} color="basic.0" size="24" />
-            </Link>
-            <Link mr={3} isExternal href="https://twitter.com/covalent_hq">
-              <Box as={FaTwitter} color="#fff" size="24" />
-            </Link>
-            <Link isExternal href="https://www.reddit.com/r/CovalentHQ/">
-              <Box as={FaReddit} color="#fff" size="24" />
-            </Link>
-          </Box>
-        </Row>
       </Container>
       <Container>
         <Text textAlign="center" variant="caption">

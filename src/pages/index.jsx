@@ -2,111 +2,272 @@ import * as React from "react";
 import Page from "Components/page";
 import Container from "Components/container";
 import Row, { Column, FluidItem } from "Components/row";
+import Link from "Components/link";
 import pageMeta from "./pageMeta.json";
-import Diagram from "Components/diagram";
-import { Box, Heading, Text, Image } from "@chakra-ui/react";
-import banner from "Img/bg-index.jpg";
-import covalent from "Img/logo.svg";
+import AlchemistCard from "Components/alchemist-card";
+import { Box, Heading, Text, Image, Flex } from "@chakra-ui/react";
+import banner from "Img/mainbg.jpg";
+import apprentice from "Img/alchemist.png";
+import valiant from "Img/valiant.png";
+import master from "Img/master.png";
+import bg2 from "Img/bg-1.jpg";
+import bg3 from "Img/bg-2.jpg";
 
 const Index = (props) => {
   return (
     <Page {...pageMeta} {...props}>
       <Box
-        sx={{
-          backgroundImage: `url(${banner})`,
-          backgroundSize: "cover",
-          backgroudRepeat: "no-repeat",
-        }}
+        bgImage={`url(${banner})`}
+        bgPosition="center"
+        py="150px"
+        bgRepeat="no-repeat"
+        bgSize="cover"
+        backgroundAttachment="fixed"
       >
-        <Container py={{ base: 5, md: "256px" }}>
-          <Box maxW={{ base: "100%", md: "60%" }}>
-            <Heading color="basic.0" variant="h1" as="h1" textAlign="center">
-              Один уніфікований API. Один мільярд можливостей.
-            </Heading>
-            <Text textAlign="center" variant="subtitle" color="basic.0">
-              Covalent забезпечує уніфікований API, що дає змогу отримати доступ
-              до мільярдів точок даних блокчейну.
+        <Container>
+          <Heading as="h1" variant="h1" color="basic.0">
+            Covalent Ambassadors Program
+          </Heading>
+          <Text color="basic.0">
+            At Covalent, we are on a mission to bring full transparency and
+            visibility to assets across the entire Web3 ecosystem. We want you
+            to be an extension of our team. As a Covalent Alchemist, you will
+            act as a key leader in developing the Covalent ecosystem. We are
+            dedicated to investing in your growth & development of all levels to
+            help you succeed. Become a Covalent Alchemist Ambassador and help
+            shape the data infrastructure layer of tomorrow.
+          </Text>
+        </Container>
+      </Box>
+
+      <Box py={{ base: "32px", md: "64px" }}>
+        <Container>
+          <Heading variant="h1">Covalent Alchemist Expectations</Heading>
+          Anyone can join the Covalent community, but to become a Covalent
+          Alchemist requires a bit more commitment. You are ultimately in
+          control of your growth journey with Covalent. A Covalent Alchemist is
+          a self-starter and autonomous team player who is keen to demonstrate
+          their dedication to the project. We will support your growth and
+          development by supporting you with the tools and coaching to succeed.
+          Every task has a large impact, whether it be joining bi-weekly calls,
+          engaging in group chats to update the community or team, launching
+          campaigns, organizing meetups, or creating content - each Covalent
+          Alchemist will be part of building the new data economy.
+        </Container>
+      </Box>
+
+      <Box py={{ base: "32px", md: "64px" }} bg="secondary.1">
+        <Container>
+          <Heading variant="h2" color="basic.0">
+            How to become be part of Covalent Alchemist program?
+          </Heading>{" "}
+          <Text color="basic.0" variant="subtitle">
+            Each month Covalent Covalent select people who wanna join their
+            Covalent Alchemist program. In section 2 you can find out what you
+            can achieve and get from this event. If you decide this what you are
+            looking for - there are steps to maximize your chances.
+          </Text>
+          <Text>
+            <Text color="basic.0">
+              1. Track announcement for onboarding in the program. Covalent has
+              a huge amount of community channels, the full list is{" "}
+              <Link
+                isExternal
+                href="https://www.notion.so/Social-Channels-Communities-e609545c8f27495087d087239be234ee"
+              >
+                here
+              </Link>
+              . Don't hesitate to ask for any info on these channels.
+            </Text>{" "}
+            <Text color="basic.0">
+              {" "}
+              2. When the date comes - find the application form on the{" "}
+              <Link isExternal href="https://www.covalenthq.com/">
+                official website
+              </Link>
+              . Generally its is available under Community - Covalent Alchemist
+              program just as shown below.
+            </Text>{" "}
+            <Text color="basic.0">
+              3. When you start applying make sure to double-check if your email
+              and Telegram are correct, otherwise you won't be notified if you
+              are selected.
+            </Text>{" "}
+            <Text color="basic.0">
+              4. There are open questions in the form, i.e interest and goals,
+              skill set, your portfolio. Make sure to answer each of them with
+              full info that you can provide. If you have some
+              video/gifs/memes/design/websites or any other work that you can
+              share - put the links into portfolio section. It would highly
+              increase chances because many people simply skip this step.
+            </Text>{" "}
+            <Text color="basic.0">
+              5. After the deadline for application all chosen people would be
+              notified via email or Telegram. I hope this will help you to
+              become an Alchemist and be part of our big community!
             </Text>
+          </Text>
+        </Container>
+      </Box>
+
+      <Box
+        py={{ base: "32px", md: "164px" }}
+        bgImage={`url(${bg2})`}
+        bgPosition="center"
+        bgRepeat="no-repeat"
+        bgSize="cover"
+        backgroundAttachment="fixed"
+      >
+        <Container>
+          <Heading color="basic.0" variant="h1">
+            Next Steps
+          </Heading>
+          <Box as="ol" color="basic.0">
+            <li>Complete the registration form</li>
+            <li>Your submission will be reviewed</li>
+            <li>
+              If your application is accepted, you will be contacted directly
+            </li>
+            <li>
+              Become a Covalent Apprentice Alchemist & then join official
+              channels
+            </li>
+            <li>Move up the ranks to become a Master Alchemist</li>
           </Box>
         </Container>
       </Box>
 
-      <Box py={10} textAlign={{ base: "center", md: "left" }}>
+      <Box py={{ base: "32px", md: "64px" }} bg="basic.1">
+        <Container>
+          <Heading variant="h1">Alchemist Ranks</Heading>
+          <Flex flexDirection={{ base: "column", md: "row" }}>
+            <AlchemistCard
+              title="Apprentice Alchemist"
+              image={apprentice}
+              description={
+                <React.Fragment>
+                  <Text>
+                    You'll work alongside The Council & the Alchemist OGs by
+                    receiving mentorship, knowledge, skills, and smaller
+                    responsibilities. This role is an excellent way of helping
+                    you discover areas or specializations you'd like to grow in,
+                    whether it's personal or professional. This rank provides
+                    you with the opportunity to play around with different
+                    procedures, strengthen current skillsets, or develop new
+                    ones!
+                  </Text>
+                  <Text>
+                    You'll soon be on your way to becoming a Valiant Alchemist
+                    where you'll take on more of a leadership role, build your
+                    own teams, and have the opportunity to unlock Valiant
+                    procedures & rewards.
+                  </Text>
+                </React.Fragment>
+              }
+            />
+            <AlchemistCard
+              title="Valiant Alchemist"
+              image={valiant}
+              description={
+                <React.Fragment>
+                  <Text>
+                    As Valiant Alchemist, you are now ready to take on greater
+                    responsibilities. Are you ready for the challenge?
+                  </Text>
+                  <ul>
+                    <li>Provide mentorship to Alchemists</li>
+                    <li>Lead small projects & campaigns</li>
+                    <li>Attend special meetings with Alchemist OGs</li>
+                    <li>
+                      Guide other fellow Apprentice Alchemists to expand their
+                      growth & development
+                    </li>
+                    <li> Build your own teams of 5 people</li>
+                    <li>
+                      Have the access to unlocked Valiant procedures & rewards
+                    </li>
+                    <li>
+                      Access to special channels on Discord where team leaders
+                      meet{" "}
+                    </li>
+                  </ul>
+                </React.Fragment>
+              }
+            />
+            <AlchemistCard
+              title="Master Alchemist"
+              image={master}
+              description={
+                <React.Fragment>
+                  <Text>
+                    You've worked so hard, but your efforts aren't in vain! You
+                    are now an independent key leader in the Covalent Alchemist
+                    Ambassador community that's well respected and known for
+                    your initiatives put forth. You play a key leader in a
+                    region of the world and are able to:
+                  </Text>
+                  <ul>
+                    <li>Provide mentorship to Alchemists</li>
+                    <li>Lead large projects & campaigns</li>
+                    <li>
+                      Attend special meetings with The Council & Alchemist OGs
+                    </li>
+                    <li>
+                      Guide other fellow Valiant and Apprentice Alchemists to
+                      expand their growth & development
+                    </li>
+                    <li>Build your own teams of over 10 people</li>
+                    <li>
+                      Have the access to unlocked Master procedures & rewards
+                    </li>
+                    <li>
+                      Access to other special features of the program, events,
+                      and meetings{" "}
+                    </li>
+                  </ul>
+                </React.Fragment>
+              }
+            />
+          </Flex>
+        </Container>
+      </Box>
+
+      <Box
+        py={{ base: "32px", md: "164px" }}
+        bgImage={`url(${bg3})`}
+        bgPosition="center"
+        bgRepeat="no-repeat"
+        bgSize="cover"
+        backgroundAttachment="fixed"
+      >
         <Container>
           <Row>
-            <Column
-              d="flex"
-              justifyContent={{ base: "center", md: "flex-start" }}
-            >
-              <Image src={covalent} />
-            </Column>
-            <Column d="flex" flexDirection="column" justifyContent="center">
-              <Heading variant="h1">Що таке ковалент?</Heading>
-              <Text>
-                Covalent забезпечує уніфікований API, щоб дає повну прозорість
-                та видимість активів у всіх мережах блокчейнів. Простіше кажучи,
-                у нас є єдиний API, який дозволяє отримати детальний, детальний
-                дані транзакцій блокчейну з декількох блокчейнів без
-                використання коду.
+            <Column>
+              <Heading variant="h1" color="basic.0">
+                What Next? Mission, Bounties, Guilds
+              </Heading>
+              <Text color="basic.0">
+                We believe every procedure you execute has a large impact,
+                whether it be joining bi-weekly calls, engaging in group chats,
+                launching campaigns, building applications, organizing meetups,
+                or creating content - each Covalent Alchemist will be part of
+                building the new economy.
               </Text>
+              <Text color="basic.0">
+                {" "}
+                Each Facility represents different procedures & bounties to
+                execute in order to receive rewards that will help you advance
+                to the next rank.{" "}
+              </Text>
+              <Link
+                isExternal
+                href="https://www.notion.so/Alchemist-Mission-Facility-3ff750849248412a89eaca3b3bcd69b4"
+              >
+                The Council`s Mission Facilities & Bounties
+              </Link>
             </Column>
           </Row>
         </Container>
-      </Box>
-      <Box py={5} textAlign={{ base: "center", md: "left" }}>
-        <Container>
-          <FluidItem>
-            <Heading variant="h1">У чому унікальність Covalent</Heading>
-            <Text variant="subtitle">
-              Є багато елементів Covalent, які роблять нас унікальними на ринку.
-              Однак наші основні відміностіи від інших проектів, зокрема Graph:
-            </Text>
-            <Box>
-              <Heading>1. Доступність даних</Heading>
-              <Text>
-                Ми єдиний проект, який повністю індексує цілі блокчейни - це
-                означає кожен окремий контракт, кожну адресу гаманця та кожну
-                окрему транзакція. Це мільярди рядків і терабайт даних. Інші
-                проекти надають лише невелику частину доступної інформації або
-                починають збирати дані лише після того, як налаштовано
-                відповідний запит або фільтр.
-              </Text>
-            </Box>
-            <Box>
-              <Heading>2. Компонування</Heading>
-              <Text>
-                Компонувальність є найважливішим елементом децентралізованих
-                фінансових (DeFi) додатків і дозволяє розробникам швидко і легко
-                розробити фінансові рішення, використовуючи для будівництва
-                блоки з безлічі проектів, подібно до конструктора "Lego".
-                Багатоканальна гнучкість та глибокі, детальні дані, які надані
-                нашим API, означають, що розробники зможуть швидко і легко
-                створювати масштабовані програми, багаті на інформацію, без
-                написання великого об'єму коду для запиту.
-              </Text>
-            </Box>
-            <Box>
-              <Heading>3. Підтримка декількох блокчейнів</Heading>
-              <Text>
-                Багатоланцюговість у нашій ДНК. Covalent вже індексує і має
-                клієнтів в 7 різних мережах блокчейну, і ще більше оголосить
-                найближчим часом.
-              </Text>
-            </Box>
-            <Box>
-              <Heading>4. Рішення без коду</Heading>
-              <Text>
-                Ми віримо в рішення без коду для наших користувачів. Це означає,
-                що немає складних запитів SQL, відсутність розробки підграфа та
-                обслуговування, не потрібно інвестувати у висококваліфікованих
-                та дорогих розробників, щоб просто отримати дані блокчейну, що
-                насамперед є монументальною втратою інженерного часу. Один API —
-                і вce готово.
-              </Text>
-            </Box>
-          </FluidItem>
-        </Container>
-        <Diagram />
       </Box>
     </Page>
   );

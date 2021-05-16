@@ -12,15 +12,11 @@ const Desktop = () => (
     alignItems="center"
     ml="auto"
   >
-    <Link variant="headerLink" color="basic.0" href="/how-it-works/" mx={2}>
-      Як це працює
-    </Link>
-
-    <Link variant="headerLink" href="/about/" mx={2}>
-      Про нас
+      <Link variant="headerLink" href="/about/" mx={2}>
+      About Covalent
     </Link>
     <Link variant="headerLink" href="/contacts/" mx={2}>
-      Контакти
+      Contacts
     </Link>
   </Flex>
 );

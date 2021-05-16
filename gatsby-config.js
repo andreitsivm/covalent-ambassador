@@ -1,14 +1,14 @@
-const TITLE = "Covalent UA";
-const HOST = "https://covalent-web-ua.vercel.app/";
+const TITLE = "Covalent ambassador help";
+const HOST = "https://covalent-ambassador.vercel.app/";
 
 module.exports = {
   siteMetadata: {
     title: TITLE,
-    description: "Covalent alchemists website for Ukrainian community",
+    description: "Covalent alchemists website whicj help became covalent ambassador, and explain typical procedures",
     siteUrl: HOST,
     author: "Mykhailo Andreitsiv <andreitsivdev@gmail.com>",
     disclaimer: "Covalent",
-    address: " #602 -- 151, вул. В. Гастінкса, Ванкувер, BC V6B 1H4, Канада",
+    address: "#602 -- 151, W. Hastings St.Vancouver, BC V6B 1H4, Canada",
     publisherEmail: "",
     currentYear: new Date().getFullYear(),
     foundationYear: 2021,

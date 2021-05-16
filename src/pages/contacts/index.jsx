@@ -7,7 +7,7 @@ import Container from "Components/container";
 import Row, { Column } from "Components/row";
 import Link from "Components/link";
 import bg from "Img/bg-4.jpg";
-import banner from "Img/banner.svg";
+import covalent from "Img/logo.svg";
 import pageMeta from "./pageMeta.json";
 
 const Contacts = (props) => {
@@ -38,11 +38,7 @@ const Contacts = (props) => {
         <Container py={10} textAlign={{ base: "center", md: "left" }}>
           <Row>
             <Column d="flex" mr={{ base: 0, md: "30px" }}>
-              <Image
-                sx={{ borderRadius: "large" }}
-                src={banner}
-                alt="covalent head office"
-              />
+              <Image src={covalent} alt="covalent" />
             </Column>
             <Column>
               <Heading variant="h1">Контакти</Heading>
