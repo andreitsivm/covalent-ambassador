@@ -7,7 +7,7 @@ import Container from "Components/container";
 import Row, { Column } from "Components/row";
 import Link from "Components/link";
 import bg from "Img/bg-4.jpg";
-import covalent from "Img/logo.svg";
+import covalent from "Img/covalent-wallpaper.jpg";
 import pageMeta from "./pageMeta.json";
 
 const Contacts = (props) => {
@@ -34,22 +34,38 @@ const Contacts = (props) => {
         <Container py={10} textAlign={{ base: "center", md: "left" }}>
           <Row>
             <Column d="flex" mr={{ base: 0, md: "30px" }}>
-              <Image src={covalent} alt="covalent" />
+              <Image
+                sx={{
+                  borderRadius: "circle",
+                }}
+                src={covalent}
+                alt="covalent"
+              />
             </Column>
             <Column d="flex" flexDirection="column" justifyContent="center">
-              <Heading variant="subtitle ">Email</Heading>{" "}
-              <Box mb={{ base: "8px", md: "0" }}>
-                <Link isExernal href="mailto:contact@covalenthq.com">
-                  contact@covalenthq.com
-                </Link>
+              <Box
+                sx={{
+                  boxShadow: "large",
+                  border: "1px solid basic.2",
+                  borderRadius: "large",
+                  p: "16px",
+                  bg: "basic.0",
+                }}
+              >
+                <Heading variant="subtitle ">Email</Heading>{" "}
+                <Box mb={{ base: "8px", md: "0" }}>
+                  <Link isExernal href="mailto:contact@covalenthq.com">
+                    contact@covalenthq.com
+                  </Link>
+                </Box>
+                <Box mb={{ base: "24px", md: "0" }}>
+                  <Link isExternal href="mailto:sales@covalenthq.com">
+                    sales@covalenthq.com
+                  </Link>
+                </Box>
+                <Heading>Covalent Global Headquarters</Heading>{" "}
+                <Text>{address}</Text>
               </Box>
-              <Box mb={{ base: "24px", md: "0" }}>
-                <Link isExternal href="mailto:sales@covalenthq.com">
-                  sales@covalenthq.com
-                </Link>
-              </Box>
-              <Heading>Covalent Global Headquarters</Heading>{" "}
-              <Text>{address}</Text>
             </Column>
           </Row>
         </Container>
