@@ -1,7 +1,7 @@
 import * as React from "react";
 import Page from "Components/page";
 import Container from "Components/container";
-import Row, { Column, FluidItem } from "Components/row";
+import Row, { Column } from "Components/row";
 import Link from "Components/link";
 import pageMeta from "./pageMeta.json";
 import AlchemistCard from "Components/alchemist-card";
@@ -23,14 +23,19 @@ const Index = (props) => {
         bgPosition="center"
         py="150px"
         bgRepeat="no-repeat"
-        bgSize="cover"
+        bgSize={{ base: "cover", md: "contain" }}
         backgroundAttachment="fixed"
       >
         <Container>
-          <Heading as="h1" variant="h1" color="basic.0">
+          <Heading
+            as="h1"
+            variant="h1"
+            color="basic.0"
+            textAlign={{ base: "center", md: "left" }}
+          >
             Covalent Ambassadors Program
           </Heading>
-          <Text color="basic.0">
+          <Text color="basic.0" textAlign={{ base: "center", md: "left" }}>
             At Covalent, we are on a mission to bring full transparency and
             visibility to assets across the entire Web3 ecosystem. We want you
             to be an extension of our team. As a Covalent Alchemist, you will
@@ -49,10 +54,18 @@ const Index = (props) => {
         <Container>
           <Row>
             <Column d="flex" flexDirection="column" justifyContent="center">
-              <Heading color="basic.0" variant="h1">
+              <Heading
+                color="basic.0"
+                variant="h1"
+                textAlign={{ base: "center", md: "left" }}
+              >
                 Covalent Alchemist Expectations
               </Heading>
-              <Text color="basic.0" pr="24px">
+              <Text
+                color="basic.0"
+                pr={{ base: 0, md: "24px" }}
+                textAlign={{ base: "center", md: "left" }}
+              >
                 Anyone can join the Covalent community, but to become a Covalent
                 Alchemist requires a bit more commitment. You are ultimately in
                 control of your growth journey with Covalent. A Covalent
@@ -82,10 +95,18 @@ const Index = (props) => {
         backgroundAttachment="fixed"
       >
         <Container>
-          <Heading variant="h2" color="basic.0">
+          <Heading
+            variant="h2"
+            color="basic.0"
+            textAlign={{ base: "center", md: "left" }}
+          >
             How to become be part of Covalent Alchemist program?
           </Heading>{" "}
-          <Text color="basic.0" variant="subtitle">
+          <Text
+            color="basic.0"
+            variant="subtitle"
+            textAlign={{ base: "center", md: "left" }}
+          >
             Each month Covalent Covalent select people who wanna join their
             Covalent Alchemist program. In section 2 you can find out what you
             can achieve and get from this event. If you decide this what you are
@@ -142,8 +163,12 @@ const Index = (props) => {
         bgSize="cover"
         backgroundAttachment="fixed"
       >
-        <Container>
-          <Heading color="basic.0" variant="h1">
+        <Container px={10}>
+          <Heading
+            color="basic.0"
+            variant="h1"
+            textAlign={{ base: "center", md: "left" }}
+          >
             Next Steps
           </Heading>
           <Box as="ol" color="basic.0">
@@ -163,8 +188,10 @@ const Index = (props) => {
 
       <Box py={{ base: "32px", md: "64px" }} bg="basic.1">
         <Container>
-          <Heading variant="h1">Alchemist Ranks</Heading>
-          <Flex flexDirection={{ base: "column", md: "row" }}>
+          <Heading variant="h1" textAlign={{ base: "center", md: "left" }}>
+            Alchemist Ranks
+          </Heading>
+          <Flex flexDirection="column">
             <AlchemistCard
               title="Apprentice Alchemist"
               image={apprentice}
@@ -265,7 +292,7 @@ const Index = (props) => {
         backgroundAttachment="fixed"
       >
         <Container>
-          <Row>
+          <Row textAlign={{ base: "center", md: "left" }}>
             <Column>
               <Heading variant="h1" color="basic.0">
                 What Next? Mission, Bounties, Guilds
@@ -277,13 +304,14 @@ const Index = (props) => {
                 or creating content - each Covalent Alchemist will be part of
                 building the new economy.
               </Text>
-              <Text color="basic.0">
+              <Text color="basic.0" textAlign={{ base: "center", md: "left" }}>
                 {" "}
                 Each Facility represents different procedures & bounties to
                 execute in order to receive rewards that will help you advance
                 to the next rank.{" "}
               </Text>
               <Link
+                fontSize="24px"
                 isExternal
                 href="https://www.notion.so/Alchemist-Mission-Facility-3ff750849248412a89eaca3b3bcd69b4"
               >

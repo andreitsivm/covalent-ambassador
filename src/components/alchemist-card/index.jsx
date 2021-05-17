@@ -1,41 +1,27 @@
 import React from "react";
-import { Flex, Box, Text, Heading, Image } from "@chakra-ui/react";
+import { Flex, Box, Heading, Image } from "@chakra-ui/react";
 import propTypes from "prop-types";
 
 const AlchemCard = ({ image, title, description }) => {
   return (
-    <Box
-      maxW={{ base: "100%", md: "370px" }}
+    <Flex
       width="100%"
       bg="basic.0"
-      mb={{ base: "30px", md: "0" }}
-      mr={{ base: "0", md: "30px" }}
+      flexDirection={{ base: "column", md: "row" }}
+      mb="30px"
       sx={{
         borderRadius: "large",
         boxShadow: "medium",
-        "&:last-of-type": {
-          mr: 0,
-        },
       }}
     >
-      <Box
-        sx={{
-          backgroundImage: `url(${image})`,
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          width: "100%",
-          height: 200,
-          borderTopRadius: "large",
-        }}
-      ></Box>
+      <Image sx={{ borderRadius: "large" }} maxW="330px" src={image} />
       <Box p="32px">
-        <Heading as="h3" variant="h3" textAlign="center">
+        <Heading mb={5} as="h3" variant="h3" textAlign="center">
           {title}
         </Heading>
-        <Box>{description}</Box>
+        <Box textAlign={{ base: "center", md: "left" }}>{description}</Box>
       </Box>
-    </Box>
+    </Flex>
   );
 };
 

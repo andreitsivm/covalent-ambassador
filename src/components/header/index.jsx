@@ -50,7 +50,7 @@ const Header = () => {
             }}
           >
             <Image width="48px" height="48px" src={logo} mr={2} />
-            <Heading variant="h3" color="basic.0">
+            <Heading fontSize={{ base: "24px", md: "20px" }} color="basic.0">
               Covalent Ambassador Guide
             </Heading>
           </Box>

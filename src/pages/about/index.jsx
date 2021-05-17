@@ -1,6 +1,6 @@
 import React from "react";
 import Page from "Components/page";
-import { Box, Heading, Text, Flex, Image } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import Row, { Column, FluidItem } from "Components/row";
 import Container from "Components/container";
 import Card from "Components/about-card";
@@ -74,7 +74,6 @@ const About = (props) => {
         </Container>
       </Box>
       <Box
-        py={5}
         textAlign={{ base: "center", md: "left" }}
         bgImage={`url(${planet})`}
         bgPosition="center"

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Image, Heading, Text, Flex } from "@chakra-ui/react";
+import { Box, Image, Heading, Text } from "@chakra-ui/react";
 import {
   FaDiscord,
   FaTelegramPlane,
