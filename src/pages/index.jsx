@@ -23,8 +23,8 @@ const Index = (props) => {
         bgPosition="center"
         py="150px"
         bgRepeat="no-repeat"
-        bgSize={{ base: "cover", md: "contain" }}
-        backgroundAttachment="fixed"
+        bgSize="cover"
+        backgroundAttachment={{ base: "inherit", md: "fixed" }}
       >
         <Container>
           <Heading
@@ -92,7 +92,7 @@ const Index = (props) => {
         py="150px"
         bgRepeat="no-repeat"
         bgSize="cover"
-        backgroundAttachment="fixed"
+        backgroundAttachment={{ base: "inherit", md: "fixed" }}
       >
         <Container>
           <Heading
@@ -161,7 +161,7 @@ const Index = (props) => {
         bgPosition="center"
         bgRepeat="no-repeat"
         bgSize="cover"
-        backgroundAttachment="fixed"
+        backgroundAttachment={{ base: "inherit", md: "fixed" }}
       >
         <Container px={10}>
           <Heading
