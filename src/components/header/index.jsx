@@ -1,5 +1,5 @@
 import React, { Fragment, useRef } from "react";
-import { Flex, Box, Image, Heading } from "@chakra-ui/react";
+import { Flex, Box, Image, Text } from "@chakra-ui/react";
 import { navigate } from "gatsby";
 
 import Container from "Components/container";
@@ -22,18 +22,21 @@ const Header = () => {
       <Box
         as="header"
         background="secondary.1"
-        height="82px"
+        height="84px"
+        display="flex"
+        alignItems="center"
         sx={{
           position: "fixed",
           boxShadow: "small",
           top: 0,
           left: 0,
           right: 0,
-          zIndex: 999,
+          zIndex: 4,
           ...(!isOnScreen && scrollStyles),
         }}
       >
         <Container
+          flexGrow={1}
           as={Flex}
           justifyContent="space-between"
           alignItems="center"
@@ -49,10 +52,19 @@ const Header = () => {
               },
             }}
           >
-            <Image width="48px" height="48px" src={logo} mr={2} />
-            <Heading fontSize={{ base: "24px", md: "20px" }} color="basic.0">
+            <Image
+              width={{ base: "32px", md: "48px" }}
+              height={{ base: "32px", md: "48px" }}
+              src={logo}
+              mr={2}
+            />
+            <Text
+              mb={0}
+              fontSize={{ base: "16px", md: "24px" }}
+              color="basic.0"
+            >
               Covalent Ambassador Guide
-            </Heading>
+            </Text>
           </Box>
           <Desktop />
           <Mobile />

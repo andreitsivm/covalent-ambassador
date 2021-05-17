@@ -20,7 +20,7 @@ const Footer = () => {
         <Row>
           <Column>
             <Image width="160px" h="60px" src={logo} />
-            <Box d="flex" mt="16px">
+            <Box d="flex" my="16px">
               <Link mr={3} isExternal href="https://t.me/CovalentHQ">
                 <Box as={FaTelegramPlane} color="#fff" size="24" />
               </Link>

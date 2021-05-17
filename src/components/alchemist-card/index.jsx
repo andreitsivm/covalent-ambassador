@@ -7,15 +7,22 @@ const AlchemCard = ({ image, title, description }) => {
     <Flex
       width="100%"
       bg="basic.0"
-      flexDirection={{ base: "column", md: "row" }}
+      flexDirection={{ base: "column", lg: "row" }}
+      alignItems="center"
       mb="30px"
+      p="32px"
       sx={{
         borderRadius: "large",
         boxShadow: "medium",
       }}
     >
-      <Image sx={{ borderRadius: "large" }} maxW="330px" src={image} />
-      <Box p="32px">
+      <Image
+        sx={{ borderRadius: "large" }}
+        maxW="330px"
+        src={image}
+        mr={{ base: 0, lg: "36px" }}
+      />
+      <Box>
         <Heading mb={5} as="h3" variant="h3" textAlign="center">
           {title}
         </Heading>
