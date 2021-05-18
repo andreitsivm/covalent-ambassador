@@ -34,7 +34,7 @@ const Contacts = (props) => {
       <Box bg="basic.1">
         <Container py={10} textAlign={{ base: "center", md: "left" }}>
           <Row>
-            <Column d="flex" mr={{ base: 0, md: "30px" }}>
+            <Column maxH="300px" d="flex" mr={{ base: 0, md: "30px" }}>
               <Image src={covalent} alt="covalent" />
             </Column>
             <Column d="flex" flexDirection="column" justifyContent="center">
