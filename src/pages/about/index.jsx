@@ -86,7 +86,8 @@ const About = (props) => {
         py="150px"
         bgRepeat="no-repeat"
         bgSize="cover"
-        backgroundAttachment="fixed"
+        backgroundAttachment={{ base: "inherit", md: "fixed" }}
+        flexBasis="auto"
       >
         <Container>
           <FluidItem>
