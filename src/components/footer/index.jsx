@@ -12,10 +12,10 @@ import Container from "Components/container";
 import useSiteMeta from "Hooks/useSiteMeta";
 import logo from "Img/logo--white.svg";
 
-const Footer = () => {
+const Footer = (props) => {
   const { copyright, currentYear } = useSiteMeta();
   return (
-    <Box as="footer" bg="basic.5" py={5}>
+    <Box as="footer" bg="basic.5" py={5} {...props}>
       <Container>
         <Row>
           <Column>

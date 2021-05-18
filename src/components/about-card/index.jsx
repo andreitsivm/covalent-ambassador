@@ -4,7 +4,13 @@ import propTypes from "prop-types";
 
 const AboutCard = ({ image, name, status }) => {
   return (
-    <Flex alignItems="center" flexDirection={{ base: "column", md: "row" }}>
+    <Flex
+      maxW={{ base: "100%", md: "50%" }}
+      width="100%"
+      alignItems="center"
+      flexDirection={{ base: "column", md: "row" }}
+      mb={5}
+    >
       <Box mb={{ base: "16px", md: "0" }} mr={{ base: "0", md: "16px" }}>
         <Image
           sx={{

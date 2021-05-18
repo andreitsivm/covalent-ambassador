@@ -12,13 +12,13 @@ const scrollStyles = {
   background: "basic.5",
 };
 
-const Header = () => {
+const Header = (props) => {
   const refBox = useRef(null);
   const isOnScreen = useOnScreen(refBox);
 
   return (
     <Fragment>
-      <Box ref={refBox} height="1px" bg="secondary.1" />
+      <Box ref={refBox} height="1px" bg="secondary.1" {...props} />
       <Box
         as="header"
         background="secondary.1"

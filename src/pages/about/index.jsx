@@ -1,6 +1,6 @@
 import React from "react";
 import Page from "Components/page";
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, Text, Flex } from "@chakra-ui/react";
 import Row, { Column, FluidItem } from "Components/row";
 import Container from "Components/container";
 import Card from "Components/about-card";
@@ -21,14 +21,16 @@ const About = (props) => {
   return (
     <Page {...pageMeta} {...props}>
       <Box
+        backgroundAttachment="fixed"
         sx={{
           backgroundImage: `url(${banner})`,
+          bgColor: "secondary.1",
+          backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
-          backgroudRepeat: "no-repeat",
         }}
       >
-        <Container py={{ base: 5, md: "256px" }}>
-          <Box maxW={{ base: "100%", md: "60%" }}>
+        <Container py={{ base: 5, md: "128px", lg: "256px" }}>
+          <Box maxW={{ base: "100%", lg: "60%" }}>
             <Heading color="basic.0" variant="h1" as="h1" textAlign="center">
               One unified API.
             </Heading>
@@ -43,7 +45,11 @@ const About = (props) => {
         </Container>
       </Box>
 
-      <Box py={10} textAlign={{ base: "center", md: "left" }} bg="basic.1">
+      <Box
+        py={{ base: 2, md: 10 }}
+        textAlign={{ base: "center", md: "left" }}
+        bg="basic.1"
+      >
         <Container>
           <Row>
             <Column
@@ -163,36 +169,23 @@ const About = (props) => {
             We are a 30-person distributed team with over 100 years of
             cumulative crypto experience.
           </Text>
-          <Row>
-            <Column>
-              <Card
-                image={ganesh}
-                name="Ganesh Swami"
-                status="CO-FOUNDER, CEO"
-              />
-            </Column>
-            <Column>
-              <Card image={levi} name="Levi Aul" status="CO-FOUNDER, CTO" />
-            </Column>
-            <Column>
-              <Card image={adrian} name="Adrian Jonklaas" status="CFO" />
-            </Column>
-          </Row>
-          <Row mt="24px">
-            <Column>
-              <Card
-                image={jackie}
-                name="Jacqueline Kim Perez"
-                status="TOKEN MARKETING"
-              />
-            </Column>
-            <Column>
-              <Card image={erik} name="Erik Ashdown" status="ECOSYSTEM" />
-            </Column>
-            <Column>
-              <Card image={rohit} name="Rohit Tandon" status="DESIGN" />
-            </Column>
-          </Row>
+          <Flex flexWrap="wrap">
+            <Card image={ganesh} name="Ganesh Swami" status="CO-FOUNDER, CEO" />
+
+            <Card image={levi} name="Levi Aul" status="CO-FOUNDER, CTO" />
+
+            <Card image={adrian} name="Adrian Jonklaas" status="CFO" />
+
+            <Card
+              image={jackie}
+              name="Jacqueline Kim Perez"
+              status="TOKEN MARKETING"
+            />
+
+            <Card image={erik} name="Erik Ashdown" status="ECOSYSTEM" />
+
+            <Card image={rohit} name="Rohit Tandon" status="DESIGN" />
+          </Flex>
         </Container>
       </Box>
     </Page>
