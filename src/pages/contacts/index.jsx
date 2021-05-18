@@ -8,6 +8,7 @@ import Row, { Column } from "Components/row";
 import Link from "Components/link";
 import bg from "Img/bg-4.jpg";
 import covalent from "Img/covalent-wallpaper.jpg";
+
 import pageMeta from "./pageMeta.json";
 
 const Contacts = (props) => {

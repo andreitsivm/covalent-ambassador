@@ -1,12 +1,12 @@
 import * as React from "react";
+import { Box, Heading, Text, Image, Flex } from "@chakra-ui/react";
+
 import Page from "Components/page";
 import Container from "Components/container";
 import Row, { Column } from "Components/row";
 import Link from "Components/link";
-import pageMeta from "./pageMeta.json";
 import AlchemistCard from "Components/alchemist-card";
-import { Box, Heading, Text, Image, Flex } from "@chakra-ui/react";
-import banner from "Img/mainbg.jpg";
+import banner from "Img/space.jpg";
 import apprentice from "Img/alchemist.png";
 import valiant from "Img/valiant.png";
 import master from "Img/master.png";
@@ -14,6 +14,8 @@ import bg2 from "Img/bg-1.jpg";
 import bg3 from "Img/bg-2.jpg";
 import space from "Img/space_way.png";
 import titan from "Img/titan.jpg";
+
+import pageMeta from "./pageMeta.json";
 
 const Index = (props) => {
   return (
