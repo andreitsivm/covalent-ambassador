@@ -110,9 +110,7 @@ const Index = (props) => {
             textAlign={{ base: "center", md: "left" }}
           >
             Each month Covalent Covalent select people who wanna join their
-            Covalent Alchemist program. In section 2 you can find out what you
-            can achieve and get from this event. If you decide this what you are
-            looking for - there are steps to maximize your chances.
+            Covalent Alchemist program.There are multiple ranks and many tasks where you can contribute to the project and where you can improve your skills. If you decide this what you are looking for - there are steps to maximize your chances of getting onboarded.
           </Text>
           <Text>
             <Text color="basic.0">
