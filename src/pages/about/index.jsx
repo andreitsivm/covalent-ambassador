@@ -131,7 +131,7 @@ const About = (props) => {
               </Text>
             </Box>
             <Box>
-              <Heading color="basic.0">No code solution</Heading>
+              <Heading color="basic.0">4. No code solution</Heading>
               <Text color="basic.0">
                 We believe in no-code solutions for our users. This means no
                 complicated SQL queries, no subgraph development and
